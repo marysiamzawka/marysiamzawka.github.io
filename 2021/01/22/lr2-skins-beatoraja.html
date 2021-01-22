@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Journey through porting LR2 play skins to beatoraja | Mr. Mary’s Ramblings</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Journey through porting LR2 play skins to beatoraja" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Preamble As a “rytmiczny świr” I have always tried to convince as many people as possible to try out BMS. And if someone is already a BMS playa, I try and make them to switch away from LR2 to beatoraja. There might be slight fanboyism here at play, but in the grand scheme of things they’d be better off playing on software that was not abandoned 10 years ago and that doesn’t force you to use outdated standards (background videos only in .mpg format, sheesh). One of the “against” points I tend to face is will my favourite skin work? The answer is “yes”, because exch-bms2 - the main author of beatoraja - has implemented backwards compability for Lunatic Rave 2 themes in the beatoraja skin format. Sadly it’s not all fine and dandy, as there is manual work required. If you get lucky, it might end at converting a couple files, and if not, you will need to edit the skin .csv files by hand, and for that you’ll need some basic knowledge of the format." />
+<meta property="og:description" content="Preamble As a “rytmiczny świr” I have always tried to convince as many people as possible to try out BMS. And if someone is already a BMS playa, I try and make them to switch away from LR2 to beatoraja. There might be slight fanboyism here at play, but in the grand scheme of things they’d be better off playing on software that was not abandoned 10 years ago and that doesn’t force you to use outdated standards (background videos only in .mpg format, sheesh). One of the “against” points I tend to face is will my favourite skin work? The answer is “yes”, because exch-bms2 - the main author of beatoraja - has implemented backwards compability for Lunatic Rave 2 themes in the beatoraja skin format. Sadly it’s not all fine and dandy, as there is manual work required. If you get lucky, it might end at converting a couple files, and if not, you will need to edit the skin .csv files by hand, and for that you’ll need some basic knowledge of the format." />
+<link rel="canonical" href="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html" />
+<meta property="og:url" content="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html" />
+<meta property="og:site_name" content="Mr. Mary’s Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-22T09:50:35+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Journey through porting LR2 play skins to beatoraja" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Journey through porting LR2 play skins to beatoraja","dateModified":"2021-01-22T09:50:35+01:00","datePublished":"2021-01-22T09:50:35+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html"},"url":"marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html","description":"Preamble As a “rytmiczny świr” I have always tried to convince as many people as possible to try out BMS. And if someone is already a BMS playa, I try and make them to switch away from LR2 to beatoraja. There might be slight fanboyism here at play, but in the grand scheme of things they’d be better off playing on software that was not abandoned 10 years ago and that doesn’t force you to use outdated standards (background videos only in .mpg format, sheesh). One of the “against” points I tend to face is will my favourite skin work? The answer is “yes”, because exch-bms2 - the main author of beatoraja - has implemented backwards compability for Lunatic Rave 2 themes in the beatoraja skin format. Sadly it’s not all fine and dandy, as there is manual work required. If you get lucky, it might end at converting a couple files, and if not, you will need to edit the skin .csv files by hand, and for that you’ll need some basic knowledge of the format.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="marysiamzawka.github.io/feed.xml" title="Mr. Mary's Ramblings" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Mr. Mary&#39;s Ramblings</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Journey through porting LR2 play skins to beatoraja</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-01-22T09:50:35+01:00" itemprop="datePublished">Jan 22, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="preamble">Preamble</h3>
+<p>As a “rytmiczny świr” I have always tried to convince as many people as possible to try out BMS. And if someone is already a BMS playa, I try and make them to switch away from LR2 to beatoraja. There <em>might</em> be slight fanboyism here at play, but in the grand scheme of things they’d be better off playing on software that was not abandoned 10 years ago and that doesn’t force you to use outdated standards (background videos only in .mpg format, <em>sheesh</em>).
+One of the “against” points I tend to face is <code class="language-plaintext highlighter-rouge">will my favourite skin work?</code> The answer is “yes”, because exch-bms2 - the main author of beatoraja - has implemented <strong>backwards compability for Lunatic Rave 2 themes</strong> in the beatoraja skin format. 
+Sadly it’s not all fine and dandy, as there is manual work required. If you get lucky, it might end at converting a couple files, and if not, you will need to edit the skin <code class="language-plaintext highlighter-rouge">.csv</code> files by hand, and for that you’ll need some basic knowledge of the format.</p>
+
+<p>In this post I’ll walk you through the process of “editing” a skin to make it work as close to the author’s intention as possible.
+All the info provided here comes either from my own research (reading through the code of beatoraja and its native skins) or from posts from other people, which I’ll link at the bottom of the post.</p>
+
+<h2 id="prerequisities">Prerequisities</h2>
+<p>Depending on how far you’ll need to go to make your features work, you’ll need one or all of the following:</p>
+<ul>
+  <li><strong>dxa_decode.exe</strong> from Lunatic Rave 2
+    <ul>
+      <li>This will be used to unpack <code class="language-plaintext highlighter-rouge">.dxa</code> archives, which most LR2 skins use to store fonts in, as beatoraja cannot process these files natively</li>
+    </ul>
+  </li>
+  <li><strong>A spreadsheet editor</strong> like <strong>Microsoft Excel</strong>, <strong>OpenOffice Calc</strong> or <strong>Google Sheets</strong>
+    <ul>
+      <li>The code of LR2 skins is contained within <code class="language-plaintext highlighter-rouge">.csv</code> (comma separated values) files, which in theory can be edited with a text editor, but using a spreadsheet editor makes the files way more comprehensive to read. In order to backport certain beatoraja-exclusive features, we’ll need to go down into the nitty-gritty</li>
+    </ul>
+  </li>
+  <li><strong>An image editor</strong>
+    <ul>
+      <li>This may or may not be required depending on how the skin is structured internally</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="out-of-the-box-experience">Out of the box experience</h2>
+<p><em>In this example I will be using the stock Lunatic Rave 2 skin, “LR2 STANDARD (7 KEYS)”</em></p>
+
+<p>In order to add a skin to beatoraja, you have to copy its directory to <code class="language-plaintext highlighter-rouge">beatoraja/skin</code>. That simple.
+After that you will be able to load it either in the config menu (through the <code class="language-plaintext highlighter-rouge">Skin</code> panel), or directly in game (by hitting F12). 
+There is a couple options you can tweak there, but let’s not bother with that for a minute. Let’s instead fire up a song and see what happens.</p>
+<video controls="" preload="metadata" onclick="(function(el){ if(el.paused) el.play(); else el.pause() })(this)"><source src="/assets/oobe.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;" /></video>
+<p><em>yeah…this ain’t right…</em></p>
+
+<p>So right off the bat there is a couple glaring issues</p>
+<ul>
+  <li>Artist and title are not present</li>
+  <li>Rotating elements are way off</li>
+  <li>Gauge does not respect EX-HARD setting (yep, it was set here)</li>
+  <li>LIFT only affects certain skin elements</li>
+</ul>
+
+<p>Luckily all of these can be addressed with editing the files one way or another, but first let’s tackle a problem, solving which will prove very useful in the future.</p>
+
+<h2 id="scaling-aka-resolution">Scaling, aka #RESOLUTION</h2>
+<p>Beatoraja’s scaling implementation is by no means perfect. Above you saw how well it handles rotating images - that’s an issue which occurs if the skin’s intended aspect ratio differs from the game’s aspect ratio. In the example above I was running a LR2SD (thus 4:3) skin in Full HD (1920x1080, which is 16:9). Funnily enough, if you run the game in a 4:3 resolution, those issues will be gone from LR2SD skins, but there’s no telling what would happen to LR2HD skins.</p>
+<h1 id="hd-skins">HD skins</h1>
+<p>Sadly, beatoraja has no way of telling a skin’s intended resolution/aspect ratio on its own. If you tried to load a LR2HD or LR2FHD skin like WMIX or EndlessCirculation without any prior edits, you would only see a small chunk of the screen.</p>
+
+<p>Turns out the required edit is contained within a single line you need to place in your skin’s <code class="language-plaintext highlighter-rouge">.lr2skin</code> file. 
+First you need to locate and open said <code class="language-plaintext highlighter-rouge">.lr2skin</code> file in a text editor of your choice. In our case it’ll be located under <code class="language-plaintext highlighter-rouge">skin/LR2/Play/play_7.lr2skin</code>.
+It’ll look something like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//,type,title,maker,thumbnail...
+#INFORMATION,0,LR2 STANDARD (7KEYS),cyclia,LR2files\Theme\LR2\Play\ss_7.png
+//typeは,,,,
+//0 7KEYS,,,,
+//1 5KEYS,,,,
+//2 14KEYS,,,,
+//3 10KEYS,,,,
+//4 9KEYS,,,,
+//5 MUSICSELECT,,,,
+//6 DECIDE,,,,
+//7 RESULT,,,,
+//8 KEYCONFIG,,,,
+//9 SKINSELECT,,,,
+//10 SOUNDSET,,,,
+//11 THEME,,,,
+</code></pre></div></div>
+<p>All we want to do in here is to add a new line at the beginning of the file and add the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#RESOLUTION,x
+</code></pre></div></div>
+<p>where the <code class="language-plaintext highlighter-rouge">x</code> is:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">1</code> for LR2HD (1280x720) skins</li>
+  <li><code class="language-plaintext highlighter-rouge">2</code> for LR2FHD (1920x1080) skins</li>
+</ul>
+
+<p>After that’s done you save the file and try loading a song in beatoraja. You should see that it now appears in all its glory!</p>
+
+<h1 id="fixing-the-rotation-in-sd-skins">Fixing the rotation in SD skins</h1>
+
+<p>The same edit will allow us to fix the oddly rotating elements in SD skins, with one side effect - now the skin will only take up a small chunk of the screen’s real estate.
+To combat this, go into skin settings (in config window or in-game through F12) and scroll down until you see <code class="language-plaintext highlighter-rouge">All offset(%)</code> options. These will allow us to move and resize the skin to our liking <strong>without affecting the internal resolution</strong>, so it will not screw up the rotation again.</p>
+
+<p>Below are examples of recommended values and their results.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>y</th>
+      <th>w</th>
+      <th>h</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td><img src="/assets/alloffset/none.jpg" alt="full" class="img-responsive" /> <em>Only a chunk of the screen is used</em></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>-50</td>
+      <td>50</td>
+      <td>50</td>
+      <td><img src="/assets/alloffset/left.jpg" alt="left" class="img-responsive" /> <em>4:3 aspect ratio, aligned to the left (useful for CS size skins)</em></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>-50</td>
+      <td>50</td>
+      <td>50</td>
+      <td><img src="/assets/alloffset/right.jpg" alt="right" class="img-responsive" /> <em>4:3 aspect ratio, aligned to the right</em></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>-50</td>
+      <td>50</td>
+      <td>50</td>
+      <td><img src="/assets/alloffset/center.jpg" alt="center" class="img-responsive" /> <em>4:3 aspect ratio, aligned more or less to the center</em></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>-50</td>
+      <td>100</td>
+      <td>50</td>
+      <td><img src="/assets/alloffset/full.jpg" alt="full" class="img-responsive" /> <em>Stretched across the screen (useful for AC size SD skins)</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="font-conversion">Font conversion</h2>
+
+<p>As stated in the beginning of this post, beatoraja does not natively handle <code class="language-plaintext highlighter-rouge">.dxa</code> files. They have to be unpacked prior to use.
+It turns out that most skins will deliver fonts in that format, which will result in missing titles in beatoraja. To fix this we only need to unpack the fonts.
+First locate the font <code class="language-plaintext highlighter-rouge">.dxa</code> files (usually they’re inside a “font” folder…big shocker, I know), and then drag and drop each one onto <code class="language-plaintext highlighter-rouge">dxa_decode.exe</code> that you got from Lunatic Rave 2. It’ll create a folder containing graphics and a <code class="language-plaintext highlighter-rouge">.lr2font</code> file, which beatoraja will happily process.
+If for whatever reason the conversion doesn’t happen (may happen with filenames containing foreign characters), you may have to temporarily rename the file for the conversion process, and then rename it back.</p>
+
+<p>In our case, oddly enough, the font files are in the <code class="language-plaintext highlighter-rouge">skin/LR2/Select</code> directory. Converting all of them will satisfy beatoraja, which now shows titles during the load process.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Before</th>
+      <th>After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/assets/font/before.jpg" alt="before" class="img-responsive" /></td>
+      <td><img src="/assets/font/after.jpg" alt="after" class="img-responsive" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="sticking-scratch-laser">Sticking scratch laser</h2>
+<h4 id="if-youre-a-keyboard-player-you-can-skip-this-part">If you’re a keyboard player, you can skip this part.</h4>
+
+<p>Most, if not all BM controllers bind the turntable digitally to an axis (for example clockwise turn means “Up” while a counter-clockwise turn means “Down”). As an anti-ghosting measure, after you’re done turning, the axis will stay “pressed” for some time, usually around half a second. The side effect is that when you use the scratch in-game, the laser will stay on for that period - and that doesn’t look pretty. Many players have simply got used to this visual bug. The fix is pretty simple though.<br />
+<strong>This is where we start delving into <code class="language-plaintext highlighter-rouge">.csv</code> files. The structure will be explained as we go.</strong><br />
+First locate the file of interest (in our case it’s under <code class="language-plaintext highlighter-rouge">skin/LR2/Play/7keys/7_LL0.csv</code> - this may differ depending on the implementation in the <code class="language-plaintext highlighter-rouge">.lr2skin</code> file) and open it in your spreadsheet editor of choice. Then you want to find the part of the file responsible for lasers (Search for <code class="language-plaintext highlighter-rouge">laser off</code> or <code class="language-plaintext highlighter-rouge">レーザーオフ</code>).
+You will see many lines of stuff, which look like this:
+<img src="/assets/scr/csv.jpg" alt="csv" class="img-responsive" /><br />
+Right now we’re interested in a chunk, which <code class="language-plaintext highlighter-rouge">timer</code> value in the <code class="language-plaintext highlighter-rouge">#SRC_IMAGE</code> row equals to <code class="language-plaintext highlighter-rouge">120</code>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">timer</code> value is used to tie a property to an in-game event. In this example value of <code class="language-plaintext highlighter-rouge">120</code> corresponds to letting go of the Scratch button.</li>
+</ul>
+
+<p>Now select and copy the rows related to this chunk (should be one row starting with <code class="language-plaintext highlighter-rouge">#SRC_IMAGE</code> and two with <code class="language-plaintext highlighter-rouge">#DST_IMAGE</code>).
+We want to paste this over the “laser on” chunk, which shouldn’t be that far away - just scroll up a bit until you see a row in which the <code class="language-plaintext highlighter-rouge">timer</code> value equals <code class="language-plaintext highlighter-rouge">100</code>.
+When you find it, paste the previously copied “laser off” chunk over it, and change the <code class="language-plaintext highlighter-rouge">timer</code> value in the <code class="language-plaintext highlighter-rouge">#SRC_IMAGE</code> row from <code class="language-plaintext highlighter-rouge">120</code> to <code class="language-plaintext highlighter-rouge">100</code> and save the file.</p>
+
+<h2 id="primer-on-lr2-skin-format">Primer on LR2 skin format</h2>
+<p>The following parts will require basic knowledge of the LR2 skin format, so we’ll go through that quickly.<br />
+Nothing in excruciating detail, just enough to get going.</p>
+
+<p>The skin language does a <strong>single pass</strong>, meaning that it’s executed once when you load the skin. This also grounds the hierarchy of all the skin elements, meaning that the further down in the file is an element placed, the closer to the foreground it’ll appear (e.g. fail shutters will appear at the very end of the file so that they’ll cover everything).</p>
+
+<p>Around the beginning of the file there are declarations of images and fonts. They’ll look something like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>//画像定義</th>
+      <th>filename</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#IMAGE</td>
+      <td>.\LR2files\Theme\LR2\Play\frame*.tga</td>
+    </tr>
+    <tr>
+      <td>#IMAGE</td>
+      <td>.\LR2files\Theme\LR2\Play\close*.tga</td>
+    </tr>
+    <tr>
+      <td>#IMAGE</td>
+      <td>.\LR2files\Theme\LR2\Play\bomb*.tga</td>
+    </tr>
+    <tr>
+      <td>#IMAGE</td>
+      <td>.\LR2files\Theme\LR2\Play\lanecover*.tga</td>
+    </tr>
+    <tr>
+      <td>#IMAGE</td>
+      <td>.\LR2files\Theme\LR2\Play\turntable*.tga</td>
+    </tr>
+    <tr>
+      <td>#IMAGE</td>
+      <td>.\LR2files\Theme\LR2\Play\fullcombo*.tga</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>(Don’t worry about the path being incorrect for beatoraja, the <code class="language-plaintext highlighter-rouge">.\LR2files\Theme\</code> bit is corrected internally by the game itself)</em>
+Each of these will be assigned to a <code class="language-plaintext highlighter-rouge">gr</code> parameter in order, meaning that <code class="language-plaintext highlighter-rouge">frame*.tga</code> will be assigned a <code class="language-plaintext highlighter-rouge">gr</code> value of <code class="language-plaintext highlighter-rouge">0</code>, <code class="language-plaintext highlighter-rouge">close*.tga</code> will be assigned a <code class="language-plaintext highlighter-rouge">gr</code> value of <code class="language-plaintext highlighter-rouge">1</code> and so on.</p>
+
+<p>The asterisk means that it’ll choose randomly from all the files that fit the wildcard, unless such file was defined in the <code class="language-plaintext highlighter-rouge">.lr2skin</code> file under <code class="language-plaintext highlighter-rouge">#CUSTOMFILE</code>, in which it’ll use the file chosen from the skin settings menu.</p>
+
+<p>There are multiple commands and variables defined within this language. A full list of them (compiled by ovnz) is available <a href="https://github.com/ovnz/blanket/blob/main/prop.lua">here</a>.
+They’re divided into multiple categories:</p>
+<ul>
+  <li><strong>image</strong> - used for calling images which are always defined the same way, namely black/white still frames, song banners or backgrounds</li>
+  <li><strong>num</strong> - used for storing numerical values like current hi-speed, combo or score</li>
+  <li><strong>timer</strong> - used to indicate various events happening within the game engine like announcing failing a song, successfully downloading scores from the IR, or even just hitting a note</li>
+  <li><strong>op</strong> - booleans used to store various states like the judgement for the last note hit or presence of a BGA</li>
+  <li><strong>text</strong> - used to store various strings like song title or the current folder</li>
+</ul>
+
+<p>Let’s now bring up a skin element that has been called inside the file:</p>
+
+<p><img src="/assets/csv/chunk.png" alt="chunk" class="img-responsive" /></p>
+
+<p>When you call an element, you need to define a <code class="language-plaintext highlighter-rouge">#SRC_</code> and a <code class="language-plaintext highlighter-rouge">#DST_</code> line.<br />
+A <code class="language-plaintext highlighter-rouge">#SRC_</code> line relates to what part of the image (defined by <code class="language-plaintext highlighter-rouge">gr</code>) we’re pulling: <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> are the origin point of our texture within the file, <code class="language-plaintext highlighter-rouge">w</code> and <code class="language-plaintext highlighter-rouge">h</code> describe the dimensions, and <code class="language-plaintext highlighter-rouge">div_x</code> and <code class="language-plaintext highlighter-rouge">div_y</code> define the amount of horizontal and vertical segments contained within that bit (which will be cycled through every amount of miliseconds defined in <code class="language-plaintext highlighter-rouge">cycle</code>). This entire bit of code will be called when the timer defined in the <code class="language-plaintext highlighter-rouge">timer</code> field is activated. In this case it’s timer <code class="language-plaintext highlighter-rouge">50</code>, which corresponds to a bomb being triggered in the 1P scratch lane.<br />
+A <code class="language-plaintext highlighter-rouge">#DST_</code> line describes how the image will behave when this bit of code is triggered. <code class="language-plaintext highlighter-rouge">time</code> is an amount of miliseconds which have to pass between triggering the code and the event itself happening. <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> are the origin position of the element on the screen, while <code class="language-plaintext highlighter-rouge">w</code> and <code class="language-plaintext highlighter-rouge">h</code> are its dimensions. If <code class="language-plaintext highlighter-rouge">w</code> and <code class="language-plaintext highlighter-rouge">h</code> are not the same across <code class="language-plaintext highlighter-rouge">#SRC_</code> and <code class="language-plaintext highlighter-rouge">#DST_</code>, there will be stretching. <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">r</code>, <code class="language-plaintext highlighter-rouge">g</code> and <code class="language-plaintext highlighter-rouge">b</code> correspond to the 8-bit RGBA values of the texture (so if you wanted to make a green-tinted image, you’d set everything but <code class="language-plaintext highlighter-rouge">g</code> to 0, and keep that one at <code class="language-plaintext highlighter-rouge">255</code>). <code class="language-plaintext highlighter-rouge">filter</code> toggles bilinear filtering for the texture, <code class="language-plaintext highlighter-rouge">angle</code> sets its rotation and <code class="language-plaintext highlighter-rouge">loop</code> sets the amount of miliseconds after which this line of code will trigger again. <code class="language-plaintext highlighter-rouge">op</code> values are conditions which will have to be met for this bit of code to execute (with exceptions).</p>
+
+<h2 id="lift">Lift</h2>
+<p>Let’s move on to backporting new features into LR2 skins. First one we’ll tackle is Lift, which will raise the bottom of the playfield by a defined amount. It’s used mostly when you want to achieve lower “green number” without drastically increasing the note speed, but your playing setup disallows use of a lane cover (for example your point for reading notes is too high for the lanecover to be viable).</p>
+
+<p>LR2 skins will have fundamental support for this feature in beatoraja, but only partially.</p>
+
+<h1 id="lifting-missing-elements">Lifting missing elements</h1>
+<p>The program is not taking shots in the dark on what should be lifted and what should be not, so on its own it only lifts element that it’s sure about - notes, judge line, judgements and combo - while leaving everything else intact. Those intact elements include judge detail (ghost), judgeline glow, lasers and bombs. To fix these, we’ll need to edit each call with one simple parameter.</p>
+
+<p>Let’s go back to the bit of the <code class="language-plaintext highlighter-rouge">.csv</code> I showed you in the previous point - you can see that there is three <code class="language-plaintext highlighter-rouge">op</code> fields. Actually there’s an <code class="language-plaintext highlighter-rouge">op4</code> field available which was barely used in LR2 (it was only used to signal rotation of the element when the scratch is used), but it’s got a new purpose in beatoraja.<br />
+If you set the <code class="language-plaintext highlighter-rouge">op4</code> to <code class="language-plaintext highlighter-rouge">3</code> in the desired element’s <code class="language-plaintext highlighter-rouge">#DST_</code> line, it’ll be shifted upwards by the lift amount.</p>
+
+<p><img src="/assets/lift/op4.png" alt="op4" class="img-responsive" /></p>
+
+<p>You can use it to lift any element you desire, but we’re looking for specific one. The table below will help you find them by their <code class="language-plaintext highlighter-rouge">timer</code> value from <code class="language-plaintext highlighter-rouge">#DST_</code> line. When you’re searching for a value, search only in a column where you know it’d be located</p>
+
+<p><img src="/assets/lift/search.png" alt="search" class="img-responsive" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="language-plaintext highlighter-rouge">timer</code> value</th>
+      <th>used for</th>
+      <th>used in</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>140</td>
+      <td>beat</td>
+      <td>Judgeline flashing</td>
+    </tr>
+    <tr>
+      <td>50-57</td>
+      <td>bombs</td>
+      <td>Bombs</td>
+    </tr>
+    <tr>
+      <td>70-77</td>
+      <td>LN bombs</td>
+      <td>LN Bombs</td>
+    </tr>
+    <tr>
+      <td>100-107</td>
+      <td>hitting a key</td>
+      <td>Laser</td>
+    </tr>
+    <tr>
+      <td>120-127</td>
+      <td>letting go of a key</td>
+      <td>Laser off</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Most skins will have multiple options for the position of the judge detail, and the code responsible for them can usually be found by looking for <code class="language-plaintext highlighter-rouge">TYPE A</code>. You can tell it’s the detail if the <code class="language-plaintext highlighter-rouge">num</code> value in the <code class="language-plaintext highlighter-rouge">#SRC_</code> row is set to <code class="language-plaintext highlighter-rouge">108</code>, which is the difference in EX score between the current play and the target score.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Before</th>
+      <th>After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/assets/lift/before.jpg" alt="before" class="img-responsive" /></td>
+      <td><img src="/assets/lift/after.jpg" alt="after" class="img-responsive" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="lift-cover">Lift cover</h1>
+<p>On the images above you can see that even after lifting the missing elements there’s still a glaring sonuvabitch of a hole left between the buttons and the judge line. While you could bake in a ghetto lift cover for one specific lift height, beatoraja offers us a far more elegant solution: a <code class="language-plaintext highlighter-rouge">LIFT</code> call. In short it works like a lane cover for lift. Wow.</p>
+
+<p>First of all we need to decide what do want to use as a lift cover. I like to use the default lane cover for the skin, but you may want to add your own thing, or use what’s the current lanecover using. Here I’m only going to cover the process of using a single image - for reference on adding a selection, refer to how lane cover is implemented in the <code class="language-plaintext highlighter-rouge">.lr2skin</code> file.</p>
+
+<p>So, in order to define a static file, we need to scroll way up to the <code class="language-plaintext highlighter-rouge">#IMAGE</code> definitions and drop our own in there.</p>
+
+<p><img src="/assets/lift/newlane.png" alt="newlane" class="img-responsive" /></p>
+
+<p>Now we need to locate where is the lane cover exactly called in the code. In the image above we can deduce, that it has a <code class="language-plaintext highlighter-rouge">gr</code> value of <code class="language-plaintext highlighter-rouge">3</code>. Lane covers are called with a <code class="language-plaintext highlighter-rouge">SLIDER</code>. So let’s search for a <code class="language-plaintext highlighter-rouge">#SRC_SLIDER</code> with a <code class="language-plaintext highlighter-rouge">gr</code> value of <code class="language-plaintext highlighter-rouge">3</code>.</p>
+
+<p><img src="/assets/lift/thereitis.png" alt="thereitis" class="img-responsive" /></p>
+
+<p>We’ve found the lane cover! Now let’s make a couple of empty rows below that and copy it whole.
+There’s a couple of changes that we want to make here with our new copy:</p>
+<ul>
+  <li>Change <code class="language-plaintext highlighter-rouge">#SRC_SLIDER</code> and <code class="language-plaintext highlighter-rouge">#DST_SLIDER</code> to <code class="language-plaintext highlighter-rouge">#SRC_LIFT</code> and <code class="language-plaintext highlighter-rouge">#DST_LIFT</code> respectively</li>
+  <li>in the commented out <code class="language-plaintext highlighter-rouge">SRC</code> line remove <code class="language-plaintext highlighter-rouge">muki</code>, <code class="language-plaintext highlighter-rouge">range</code>, <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">disable</code>. Put <code class="language-plaintext highlighter-rouge">disapearLine</code> and <code class="language-plaintext highlighter-rouge">isDisapearLineLinkLeft</code> in their place (this is totally optional but serves as a visual aid)</li>
+  <li>Remove the values of the fields you deleted in the previous line, set <code class="language-plaintext highlighter-rouge">disapearLine</code> value to be the same as <code class="language-plaintext highlighter-rouge">h</code> and <code class="language-plaintext highlighter-rouge">isDisapearLineLinkLeft</code> to 0</li>
+  <li>invert the sign of <code class="language-plaintext highlighter-rouge">y</code> values in both <code class="language-plaintext highlighter-rouge">#DST_LIFT</code> rows so that positive is now negative and vice versa</li>
+</ul>
+
+<p><img src="/assets/lift/post.png" alt="post" class="img-responsive" /></p>
+
+<p>This happens to work like a charm for LR2, just look at it go!</p>
+
+<video controls="" preload="metadata" onclick="(function(el){ if(el.paused) el.play(); else el.pause() })(this)"><source src="/assets/lift/result.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;" /></video>
+
+<p>Keep in mind that this is <strong>not</strong> a one-size-fits-all solution, some skins may require additional steps to make them work.</p>
+
+<h2 id="ex-hard-and-assist-gauges">EX-HARD and ASSIST gauges</h2>
+
+<p>Lunatic Rave 2 did not have EX-Hard or Assisted Easy gauges, so naturally LR2 skins do not implement these in any way. The backporting process is pretty straightforward however. It may vary depending on how your skin is structured.
+First of all locate the <code class="language-plaintext highlighter-rouge">GROOVEGAUGE</code> call in your skin. Then you want to make around 12 empty rows under that, and copy the entire <code class="language-plaintext highlighter-rouge">GROOVEGAUGE</code> block 1 or 2 times depending on your needs.</p>
+
+<p>Turns out that the current gauge is signaled by different <code class="language-plaintext highlighter-rouge">op</code> parameters, and that can be used to control the current gauge texture.<br />
+Those ops work as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gauge type</th>
+      <th>op 1046 <code class="language-plaintext highlighter-rouge">gauge_ex</code></th>
+      <th>op 42 <code class="language-plaintext highlighter-rouge">gauge_groove</code></th>
+      <th>op 43 <code class="language-plaintext highlighter-rouge">gauge_hard</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Assist) Easy</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Groove</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Hard</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>EX-Hard</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>With that knowledge we can take 2 approaches to the process, either:</p>
+<ul>
+  <li>Copy the gauge block once and assign a different texture for op <code class="language-plaintext highlighter-rouge">1046</code> gauges</li>
+  <li>Copy the gauge block twice and assign different textures for both Easy and EX-Hard gauges</li>
+</ul>
+
+<p>Below I’ll describe the process for the first approach. The other one only requires for the two new gauge blocks to check for ops <code class="language-plaintext highlighter-rouge">42</code> and <code class="language-plaintext highlighter-rouge">43</code> on top of <code class="language-plaintext highlighter-rouge">1046</code>.</p>
+
+<p>For starters, we’ll need to define a gauge texture with colors corresponding to the state we’re interested in. Some skins like WMIX, ILAS or GirlishCafe store gauges in separate files, which makes the defining process that much easier, but if that’s not the case, we’ll need to extract the gauge from another file and adjust our code block a bit.<br />
+First locate the file in which the gauge is stored (in our case the <code class="language-plaintext highlighter-rouge">#SRC_GROOVEGAUGE</code> line calls for <code class="language-plaintext highlighter-rouge">gr</code> of <code class="language-plaintext highlighter-rouge">0</code>, so we’re interested in a file from the <code class="language-plaintext highlighter-rouge">skin\LR2\Play\frame</code> directory). Then we can use the coordinates from <code class="language-plaintext highlighter-rouge">#SRC_GROOVEGAUGE</code> to locate the gauge texture and extract it into a separate file, which then we can define in the <code class="language-plaintext highlighter-rouge">#IMAGE</code> block.</p>
+
+<p><img src="/assets/gajga/edit.jpg" alt="edit" class="img-responsive" /><br />
+<em>On the left: original gauge from the default frame file</em><br />
+<em>On the right: my edit which follows the simple-7keys color scheme</em></p>
+
+<p>Now back to the code…
+For the commented <code class="language-plaintext highlighter-rouge">DST</code> line in each block you want to add <code class="language-plaintext highlighter-rouge">op1</code> through <code class="language-plaintext highlighter-rouge">op3</code> at the end, if they don’t have them, purely for visual aid. Now in the first <code class="language-plaintext highlighter-rouge">#DST_GROOVEGAUGE</code> line of the first block you want to make the <code class="language-plaintext highlighter-rouge">op1</code> value into <code class="language-plaintext highlighter-rouge">-1046</code> (a minus sign is a “not”, so here’ we’re checking if we are <em>not</em> in an EX gauge), and <code class="language-plaintext highlighter-rouge">1046</code> in the other block.</p>
+
+<p>The first block is done, but the other one needs some more work, since we’re using a different texture for it.
+All the changes that need to be done are within the <code class="language-plaintext highlighter-rouge">#SRC_GROOVEGAUGE</code> row - change the <code class="language-plaintext highlighter-rouge">gr</code> to point to your newly defined gauge texture, and change <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> to 0, so that they point to the origin of the image.</p>
+
+<video controls="" preload="metadata" onclick="(function(el){ if(el.paused) el.play(); else el.pause() })(this)"><source src="/assets/gajga/ass2.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" /></video>
+<p><em>And there it is!</em></p>
+
+<h2 id="gn-display">GN display</h2>
+<p>beatoraja has the ability to display a lot of numerical values that LR2 did not even implement, like lift number, speed values at minimum and maximum BPM and such. In this example I’m gonna show you how to show the IIDX Green Number.</p>
+
+<p>First of all, find a block which <code class="language-plaintext highlighter-rouge">#SRC_NUMBER</code> row has a <code class="language-plaintext highlighter-rouge">num</code> value of <code class="language-plaintext highlighter-rouge">14</code> (<code class="language-plaintext highlighter-rouge">lanecover1</code>).
+Add a couple of rows below that block and make a copy. Now change the <code class="language-plaintext highlighter-rouge">num</code> value in the copy to <code class="language-plaintext highlighter-rouge">313</code> (which corresponds to the IIDX GN) and change the <code class="language-plaintext highlighter-rouge">r</code> and <code class="language-plaintext highlighter-rouge">b</code> values to <code class="language-plaintext highlighter-rouge">0</code>, so that our Green Number is truly green.<br />
+You’ll also want to change the <code class="language-plaintext highlighter-rouge">x</code> value in both blocks’ <code class="language-plaintext highlighter-rouge">#DST_NUMBER</code> rows to space them out a bit, so that they don’t overlap each other.
+By the way, remember the <code class="language-plaintext highlighter-rouge">op4</code> thingy from back when we were fixing Lift? Well, turns out you can also use that op to make elements follow the lanecover! Just set the <code class="language-plaintext highlighter-rouge">op4</code> value to <code class="language-plaintext highlighter-rouge">4</code> and then tweak the <code class="language-plaintext highlighter-rouge">y</code> values in both <code class="language-plaintext highlighter-rouge">#DST_NUMBER</code> blocks to your liking!</p>
+<video controls="" preload="metadata" onclick="(function(el){ if(el.paused) el.play(); else el.pause() })(this)"><source src="/assets/gn/done.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;" /></video>
+
+<h2 id="fast-and-slow">FAST and SLOW</h2>
+<p>This bit has taken me the longest time to figure out.
+Long story short, there’s two ways going about this, either:</p>
+<ul>
+  <li>Use beatoraja’s built-in fast/slow display (quick and dirty, but gets the job done)</li>
+  <li>(Re)implement your own Fast/Slow display (requires (re)writing a bit of the code related to showing F/S)</li>
+</ul>
+
+<h1 id="built-in-display">Built-in display</h1>
+<p>Each LR2 skin loaded into beatoraja can make use of the built-in fast/slow display, which can be in traditional text form, or can show how much miliseconds were you off.
+All of this and positioning of the detail can be changed in skin settings.</p>
+
+<p><img src="/assets/fs/options.jpg" alt="edit" class="img-responsive" /><br />
+<em>The options available for all LR2 skins by default</em></p>
+
+<p>While this is very simple to set up, respects LIFT options on its own, and is fully movable and customizable, you’re stuck with the default font (the same used for all the tickers at the top of the screen), which you may not end up liking.</p>
+
+<h1 id="bring-your-own-fastslows">Bring Your Own Fastslows</h1>
+<p><strong>This part can be also applied if you want to implement your own F/S display</strong>
+Certain LR2 skins like WMIX or Bluewhite were designed to take advantage of certain LR2 hacks, which implemented a Fast/Slow display. While there is F/S stuff exposed to the skinmakers, it’s fundamentally different in beatoraja, so there is more work involved in re-enabling the display.</p>
+
+<p>As the default LR2 skin does not even implement that, we’re gonna jump over to WMIX for this example, specifically the file <code class="language-plaintext highlighter-rouge">skin\WMIX_HD\play\csv\wide_1p.csv</code>.
+In order to locate the code responsible for Fasts and Slows, just look for “FAST”.
+In this case it’s located near the end of the code.</p>
+
+<p><img src="/assets/fs/csv.png" alt="edit" class="img-responsive" /><br />
+<em>This chungus is responsible for displaying Fasts and Slows</em></p>
+
+<p>We cannot use this code in its current form because the num value <code class="language-plaintext highlighter-rouge">210</code> which was used to signal whether you hit fast on slow in LR2 hacks has been repurposed in beatoraja as the number of players who have failed a chart. Besides, ops <code class="language-plaintext highlighter-rouge">242</code> through <code class="language-plaintext highlighter-rouge">245</code> used to signal whether you hit something that basically wasn’t a PGreat are now obsolete, as beatoraja exposes ops <code class="language-plaintext highlighter-rouge">1242</code> and <code class="language-plaintext highlighter-rouge">1243</code> which signal an early and a late hit respectively.<br />
+So instead we’re gonna write our own code to replace the non-working stuff, but first let’s walk through what we have in here.</p>
+
+<p>The chunks we’re looking at use a hacky method by having the fast/slow textures represent the number held in the num value <code class="language-plaintext highlighter-rouge">210</code>. The only difference between the two 4-chunk parts is <code class="language-plaintext highlighter-rouge">op1</code> which in one case is <code class="language-plaintext highlighter-rouge">35</code>, and in another is <code class="language-plaintext highlighter-rouge">-35</code> (this op tells us whether “Ghost A” (above the judgements) is enabled).</p>
+
+<p>First we’re going to get rid of all but one chunk in first half, so that we have reference for position.
+Then you want to find an <code class="language-plaintext highlighter-rouge">IMAGE</code> chunk in the code which has one <code class="language-plaintext highlighter-rouge">#SRC_</code> row and two <code class="language-plaintext highlighter-rouge">#DST_</code> rows and copy that in each half of the F/S part. We’re going to use these as base for implementing our own thing.
+Now open the image which is assigned to the <code class="language-plaintext highlighter-rouge">gr</code> value used in the F/S <code class="language-plaintext highlighter-rouge">#SRC_NUMBER</code> row. Use your favourite image editing software to pinpoint the origin point of the FAST ticker (you’re looking for a rectangle which has <code class="language-plaintext highlighter-rouge">w</code> and <code class="language-plaintext highlighter-rouge">h</code> dimensions). In our case the origin point has a <code class="language-plaintext highlighter-rouge">x</code> of <code class="language-plaintext highlighter-rouge">60</code> and <code class="language-plaintext highlighter-rouge">y</code> of <code class="language-plaintext highlighter-rouge">32</code>.</p>
+
+<p><img src="/assets/fs/dimensions.png" alt="edit" class="img-responsive" /><br />
+<em>Finding the origin point in Photoshop 2020</em></p>
+
+<p>After that you want to copy over certain elements from the original <code class="language-plaintext highlighter-rouge">NUMBER</code> chunk to the new <code class="language-plaintext highlighter-rouge">IMAGE</code> chunk:</p>
+
+<p><img src="/assets/fs/tocopy.png" alt="edit" class="img-responsive" /><br />
+<em>The elements you want to copy over are marked in green</em></p>
+
+<p>You also want to copy <code class="language-plaintext highlighter-rouge">timer</code> values both from <code class="language-plaintext highlighter-rouge">#SRC_NUMBER</code> and <code class="language-plaintext highlighter-rouge">#DST_NUMBER</code> rows, and set all the <code class="language-plaintext highlighter-rouge">op</code> values in <code class="language-plaintext highlighter-rouge">#SRC_</code> to 0.<br />
+If your skin distinguishes the placement of the F/S ticker based on the presence of the Ghost, you’ll want to set <code class="language-plaintext highlighter-rouge">op1</code> to either <code class="language-plaintext highlighter-rouge">35</code> or <code class="language-plaintext highlighter-rouge">-35</code>. <code class="language-plaintext highlighter-rouge">op2</code> should be set to <code class="language-plaintext highlighter-rouge">1242</code>.<br />
+Now save the <code class="language-plaintext highlighter-rouge">.csv</code> and check if you can see FASTs in-game (you should, if you can’t then hit me up). Now copy the <code class="language-plaintext highlighter-rouge">IMAGE</code> chunk we’ve just created and paste it right under the original. In that one change <code class="language-plaintext highlighter-rouge">op2</code> to <code class="language-plaintext highlighter-rouge">1243</code> and change the <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> in <code class="language-plaintext highlighter-rouge">#SRC_</code> to point to the SLOW graphic.
+Don’t remember to set <code class="language-plaintext highlighter-rouge">op4</code> to <code class="language-plaintext highlighter-rouge">3</code> to make the ticker follow Lift!</p>
+
+<video controls="" preload="metadata" onclick="(function(el){ if(el.paused) el.play(); else el.pause() })(this)"><source src="/assets/fs/done.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;" /></video>
+<p><em>Look at it go!</em></p>
+
+<h2 id="bilinear-filtering">Bilinear filtering</h2>
+<p>When you load a LR2 skin into beatoraja, you may notice that some elements look more pixelated than others. Turns out that the skin format allows for a <code class="language-plaintext highlighter-rouge">filter</code> flag, which will enable bilinear filtering for a called element. You can see it in the previous point in the <code class="language-plaintext highlighter-rouge">#DST_</code> segment. Sadly you can’t just apply a filter for the entire skin - you must apply it on per-element basis. But boy, it does improve the visuals.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="/assets/filter/rtx_off.png" alt="edit" class="img-responsive" /></th>
+      <th><img src="/assets/filter/rtx_on.png" alt="edit" class="img-responsive" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">filter</code> set to <code class="language-plaintext highlighter-rouge">1</code> only for the Ghost</td>
+      <td><code class="language-plaintext highlighter-rouge">filter</code> set to 1 on Ghost, F/S and Judge</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="skin-elements-not-loading">Skin elements not loading?</h2>
+<p>I have encountered this specific issue with EndlessCirculation and CB_MODOKI skins (they use similar <code class="language-plaintext highlighter-rouge">.csv</code> files). If you open any of its <code class="language-plaintext highlighter-rouge">.csv</code> files in a spreadsheet editor, you’ll notice something peculiar about the way the define <code class="language-plaintext highlighter-rouge">#IMAGE</code> files:</p>
+
+<p><img src="/assets/quotes/ecse.png" alt="edit" class="img-responsive" /><br />
+<em>This looks “"”normal”””</em></p>
+
+<p>For whatever reason the creator of this skin used an excessive amount of quotation marks. While LR2 will gladly take these and use them properly, it’ll knock off beatoraja’s backwards compability and not load an image, resulting in mostly black playfield. The solution is simple - remove the excessive quotation marks.</p>
+
+<h2 id="closing-words">Closing words</h2>
+<p>Next time someone tells you that they won’t switch to beatoraja because they can’t carry over their favourite skin, you can tell them to fuck right off!
+Writing this entire thing helped me understand how LR2 (and in turn, beatoraja) skins work under the hood, and that may push me into writing my own skin one day.</p>
+
+<p>While I’m glad that all of the things I described above are possible, I really feel that the majority can (and should) be integrated into beatoraja’s code. Hell, LR2’s “press 4 and arrows” way of achieving Lift works better than beatoraja’s out of the box solution! Of course, it gets knocked out of the park once you add edits to the skin, but you shouldn’t <em>need</em> to do that yourself!</p>
+
+<p>I really hope this comes in handy to anyone who’s interested in general skinning manners. Gotta make that BMS cab pretty.</p>
+
+<p>And before you ask: No, I couldn’t get KCOOL or Bluewhite to work properly with beatoraja. There’s just something odd about them that beatoraja doesn’t like. If <em>you</em> do figure out what’s wrong with them, please get in touch.</p>
+
+<h2 id="sources">Sources</h2>
+<ol>
+  <li><a href="https://asa-otoge.hatenablog.com/entry/2020/05/29/142421">LR2用のスキンをbeatoraja特有機能に対応させる by Asa-Otoge</a></li>
+  <li><a href="https://github.com/ovnz/blanket/blob/main/prop.lua">prop.lua from the Blanket result skin by ovnz</a></li>
+  <li><a href="https://github.com/exch-bms2/beatoraja">beatoraja Github repo</a></li>
+</ol>
+
+  </div><a class="u-url" href="/2021/01/22/lr2-skins-beatoraja.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Mr. Mary&#39;s Ramblings</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Mr. Mary&#39;s Ramblings</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/marysiamzawka"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">marysiamzawka</span></a></li><li><a href="https://www.twitter.com/zlewyjuzjado"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">zlewyjuzjado</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>I wrote this thing only to not clog up others&#39; Twitter feed with my stuff (I ain&#39;t no Foone)</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
