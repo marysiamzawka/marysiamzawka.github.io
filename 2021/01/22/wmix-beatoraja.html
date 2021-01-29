@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>WFIX - WMIX HD has been made beatoraja-compliant | Mr. Mary’s Ramblings</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="WFIX - WMIX HD has been made beatoraja-compliant" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I wrote this thing only to not clog up others’ Twitter feed with my stuff (I ain’t no Foone)" />
+<meta property="og:description" content="I wrote this thing only to not clog up others’ Twitter feed with my stuff (I ain’t no Foone)" />
+<link rel="canonical" href="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html" />
+<meta property="og:url" content="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html" />
+<meta property="og:site_name" content="Mr. Mary’s Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-22T09:50:35+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="WFIX - WMIX HD has been made beatoraja-compliant" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"WFIX - WMIX HD has been made beatoraja-compliant","dateModified":"2021-01-22T09:50:35+01:00","datePublished":"2021-01-22T09:50:35+01:00","url":"marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html","mainEntityOfPage":{"@type":"WebPage","@id":"marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html"},"description":"I wrote this thing only to not clog up others’ Twitter feed with my stuff (I ain’t no Foone)","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="marysiamzawka.github.io/feed.xml" title="Mr. Mary's Ramblings" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Mr. Mary&#39;s Ramblings</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">WFIX - WMIX HD has been made beatoraja-compliant</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-01-22T09:50:35+01:00" itemprop="datePublished">Jan 22, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a>    <ul>
+      <li><a href="#features-left-out-on-purpose" id="markdown-toc-features-left-out-on-purpose">Features left out on purpose</a></li>
+    </ul>
+  </li>
+  <li><a href="#screenshots" id="markdown-toc-screenshots">Screenshots</a></li>
+  <li><a href="#download" id="markdown-toc-download">Download</a></li>
+  <li><a href="#installation-instructions" id="markdown-toc-installation-instructions">Installation instructions</a></li>
+  <li><a href="#credits" id="markdown-toc-credits">Credits</a></li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>Following my previous post, this is WMIX HD by Wisp, which I have edited to take advantage of beatoraja-specific features.</p>
+
+<p><span style="color:red"><strong>This fix is meant for beatoraja. It is not required for LR2, nor will it bring any additional features for that player.</strong></span></p>
+
+<h2 id="changelog">Changelog</h2>
+
+<ul>
+  <li>Unpacked .dxa fonts
+    <ul>
+      <li>beatoraja is not able to process <code class="language-plaintext highlighter-rouge">.dxa</code> files on its own</li>
+    </ul>
+  </li>
+  <li>Fixed Lift
+    <ul>
+      <li>Lift cover is present, elements like Ghost, lasers and bombs now respect Lift</li>
+      <li>Lift cover uses the current Lane Cover texture. If you wish to change it, add your own texture into the <code class="language-plaintext highlighter-rouge">#IMAGE</code> block and change the <code class="language-plaintext highlighter-rouge">gr</code> number in <code class="language-plaintext highlighter-rouge">#SRC_LIFT</code> (refer to my previous post)</li>
+    </ul>
+  </li>
+  <li>Added EX-Hard and (Assist) Easy gauges
+    <ul>
+      <li>They use the default Yellow and Blue gauge textures respectively</li>
+    </ul>
+  </li>
+  <li>Fixed Fast/Slow display
+    <ul>
+      <li>Previously F/S would not work because of the changes in the underlying mechanics</li>
+    </ul>
+  </li>
+  <li>Added Green Number and Lift Height display
+    <ul>
+      <li>These will respect the presence of both Lane Cover and Lift Cover</li>
+    </ul>
+  </li>
+  <li>Enabled filtering for all skin elements
+    <ul>
+      <li>This is to help with scaling when playing in non-720p resolutions</li>
+    </ul>
+  </li>
+  <li>Added a “beatoraja” effector badge
+    <ul>
+      <li>Originally when there was no effect in use, this badge would say “Lunatic Rave”</li>
+    </ul>
+  </li>
+  <li>Fixed an issue with oversaturated #BACKBGA images
+    <ul>
+      <li>Caused by beatoraja’s mishandling of “shadow” effects</li>
+    </ul>
+  </li>
+  <li>Fixed an issue where 1P notes would appear as white and yellow blocks in the Double Play Wide skin
+    <ul>
+      <li>Caused by an oddity in beatoraja’s parsing of <code class="language-plaintext highlighter-rouge">#SRC_NOTE</code> and <code class="language-plaintext highlighter-rouge">#DST_NOTE</code> calls</li>
+    </ul>
+  </li>
+  <li>Fixed an issue where a white rectangle would appear on certain “Stage Failed” shutters
+    <ul>
+      <li>Caused by beatoraja’s different way of rendering textures which are placed outside of the original image’s boundaries</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="features-left-out-on-purpose">Features left out on purpose</h3>
+
+<ul>
+  <li>Hidden cover
+    <ul>
+      <li>Realistically speaking no one is playing with Hidden on, so I did not bother implementing it
+        <ul>
+          <li>If you desire to implement it, you can make a copy of the <code class="language-plaintext highlighter-rouge">#SRC_LIFT</code> block and rename <code class="language-plaintext highlighter-rouge">#SRC_LIFT</code> and <code class="language-plaintext highlighter-rouge">#DST_LIFT</code> to <code class="language-plaintext highlighter-rouge">#SRC_HIDDEN</code> and <code class="language-plaintext highlighter-rouge">#DST_HIDDEN</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>(G-)Battle skins
+    <ul>
+      <li>As far as I’m aware, it’s not possible to play in Battle mode in beatoraja, so even if I wanted to edit those skins, I’d have no way of testing.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="screenshots">Screenshots</h2>
+
+<p><img src="/assets/wmix/screen1.jpg" alt="screen1" class="img-responsive" />  <br />
+<img src="/assets/wmix/screen2.jpg" alt="screen2" class="img-responsive" />  <br />
+<img src="/assets/wmix/screen3.jpg" alt="screen3" class="img-responsive" />  <br />
+<img src="/assets/wmix/screen4.jpg" alt="screen4" class="img-responsive" /></p>
+
+<h2 id="download">Download</h2>
+
+<p><a href="/assets/wmix/wfix10.7z">v1.0</a></p>
+
+<h2 id="installation-instructions">Installation instructions</h2>
+
+<ol>
+  <li>Make sure you have WMIX HD in your <code class="language-plaintext highlighter-rouge">/beatoraja/skins</code>/ folder</li>
+  <li>Unpack the WFIX zip into <code class="language-plaintext highlighter-rouge">/beatoraja/skins/</code>, merging the contents of two <code class="language-plaintext highlighter-rouge">WMIX_HD</code> folders</li>
+  <li>Go overjoy)</li>
+</ol>
+
+<h2 id="credits">Credits</h2>
+<ul>
+  <li><strong>Wisp</strong> for making WMIX HD</li>
+  <li><strong>Mr. Mary</strong> for applying the beatoraja edits</li>
+  <li><strong>Asa-otoge</strong> for making <a href="https://asa-otoge.hatenablog.com/entry/2020/05/29/142421">the original blog post</a> describing the skin modding process</li>
+</ul>
+
+
+  </div><a class="u-url" href="/2021/01/22/wmix-beatoraja.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Mr. Mary&#39;s Ramblings</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Mr. Mary&#39;s Ramblings</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/marysiamzawka"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">marysiamzawka</span></a></li><li><a href="https://www.twitter.com/zlewyjuzjado"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">zlewyjuzjado</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>I wrote this thing only to not clog up others&#39; Twitter feed with my stuff (I ain&#39;t no Foone)</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

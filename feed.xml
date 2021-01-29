@@ -1,4 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="marysiamzawka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="marysiamzawka.github.io/" rel="alternate" type="text/html" /><updated>2021-01-22T23:43:13+01:00</updated><id>marysiamzawka.github.io/feed.xml</id><title type="html">Mr. Mary’s Ramblings</title><subtitle>I wrote this thing only to not clog up others' Twitter feed with my stuff (I ain't no Foone)</subtitle><entry><title type="html">Journey through porting LR2 play skins to beatoraja</title><link href="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html" rel="alternate" type="text/html" title="Journey through porting LR2 play skins to beatoraja" /><published>2021-01-22T09:50:35+01:00</published><updated>2021-01-22T09:50:35+01:00</updated><id>marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja</id><content type="html" xml:base="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html">&lt;h3 id=&quot;preamble&quot;&gt;Preamble&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="marysiamzawka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="marysiamzawka.github.io/" rel="alternate" type="text/html" /><updated>2021-01-29T17:13:52+01:00</updated><id>marysiamzawka.github.io/feed.xml</id><title type="html">Mr. Mary’s Ramblings</title><subtitle>I wrote this thing only to not clog up others' Twitter feed with my stuff (I ain't no Foone)</subtitle><entry><title type="html">WFIX - WMIX HD has been made beatoraja-compliant</title><link href="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html" rel="alternate" type="text/html" title="WFIX - WMIX HD has been made beatoraja-compliant" /><published>2021-01-22T09:50:35+01:00</published><updated>2021-01-22T09:50:35+01:00</updated><id>marysiamzawka.github.io/2021/01/22/wmix-beatoraja</id><content type="html" xml:base="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#overview&quot; id=&quot;markdown-toc-overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#changelog&quot; id=&quot;markdown-toc-changelog&quot;&gt;Changelog&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#features-left-out-on-purpose&quot; id=&quot;markdown-toc-features-left-out-on-purpose&quot;&gt;Features left out on purpose&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#screenshots&quot; id=&quot;markdown-toc-screenshots&quot;&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#download&quot; id=&quot;markdown-toc-download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#installation-instructions&quot; id=&quot;markdown-toc-installation-instructions&quot;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#credits&quot; id=&quot;markdown-toc-credits&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Following my previous post, this is WMIX HD by Wisp, which I have edited to take advantage of beatoraja-specific features.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;This fix is meant for beatoraja. It is not required for LR2, nor will it bring any additional features for that player.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unpacked .dxa fonts
+    &lt;ul&gt;
+      &lt;li&gt;beatoraja is not able to process &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dxa&lt;/code&gt; files on its own&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed Lift
+    &lt;ul&gt;
+      &lt;li&gt;Lift cover is present, elements like Ghost, lasers and bombs now respect Lift&lt;/li&gt;
+      &lt;li&gt;Lift cover uses the current Lane Cover texture. If you wish to change it, add your own texture into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#IMAGE&lt;/code&gt; block and change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gr&lt;/code&gt; number in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; (refer to my previous post)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added EX-Hard and (Assist) Easy gauges
+    &lt;ul&gt;
+      &lt;li&gt;They use the default Yellow and Blue gauge textures respectively&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed Fast/Slow display
+    &lt;ul&gt;
+      &lt;li&gt;Previously F/S would not work because of the changes in the underlying mechanics&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added Green Number and Lift Height display
+    &lt;ul&gt;
+      &lt;li&gt;These will respect the presence of both Lane Cover and Lift Cover&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Enabled filtering for all skin elements
+    &lt;ul&gt;
+      &lt;li&gt;This is to help with scaling when playing in non-720p resolutions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added a “beatoraja” effector badge
+    &lt;ul&gt;
+      &lt;li&gt;Originally when there was no effect in use, this badge would say “Lunatic Rave”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue with oversaturated #BACKBGA images
+    &lt;ul&gt;
+      &lt;li&gt;Caused by beatoraja’s mishandling of “shadow” effects&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue where 1P notes would appear as white and yellow blocks in the Double Play Wide skin
+    &lt;ul&gt;
+      &lt;li&gt;Caused by an oddity in beatoraja’s parsing of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_NOTE&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_NOTE&lt;/code&gt; calls&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue where a white rectangle would appear on certain “Stage Failed” shutters
+    &lt;ul&gt;
+      &lt;li&gt;Caused by beatoraja’s different way of rendering textures which are placed outside of the original image’s boundaries&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;features-left-out-on-purpose&quot;&gt;Features left out on purpose&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hidden cover
+    &lt;ul&gt;
+      &lt;li&gt;Realistically speaking no one is playing with Hidden on, so I did not bother implementing it
+        &lt;ul&gt;
+          &lt;li&gt;If you desire to implement it, you can make a copy of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; block and rename &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_LIFT&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_HIDDEN&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_HIDDEN&lt;/code&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;(G-)Battle skins
+    &lt;ul&gt;
+      &lt;li&gt;As far as I’m aware, it’s not possible to play in Battle mode in beatoraja, so even if I wanted to edit those skins, I’d have no way of testing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/wmix/screen1.jpg&quot; alt=&quot;screen1&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
+&lt;img src=&quot;/assets/wmix/screen2.jpg&quot; alt=&quot;screen2&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
+&lt;img src=&quot;/assets/wmix/screen3.jpg&quot; alt=&quot;screen3&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
+&lt;img src=&quot;/assets/wmix/screen4.jpg&quot; alt=&quot;screen4&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/wmix/wfix10.7z&quot;&gt;v1.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installation-instructions&quot;&gt;Installation instructions&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Make sure you have WMIX HD in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/beatoraja/skins&lt;/code&gt;/ folder&lt;/li&gt;
+  &lt;li&gt;Unpack the WFIX zip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/beatoraja/skins/&lt;/code&gt;, merging the contents of two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WMIX_HD&lt;/code&gt; folders&lt;/li&gt;
+  &lt;li&gt;Go overjoy)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Wisp&lt;/strong&gt; for making WMIX HD&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mr. Mary&lt;/strong&gt; for applying the beatoraja edits&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Asa-otoge&lt;/strong&gt; for making &lt;a href=&quot;https://asa-otoge.hatenablog.com/entry/2020/05/29/142421&quot;&gt;the original blog post&lt;/a&gt; describing the skin modding process&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author></entry><entry><title type="html">Journey through porting LR2 play skins to beatoraja</title><link href="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html" rel="alternate" type="text/html" title="Journey through porting LR2 play skins to beatoraja" /><published>2021-01-22T09:50:35+01:00</published><updated>2021-01-22T09:50:35+01:00</updated><id>marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja</id><content type="html" xml:base="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#tldr&quot; id=&quot;markdown-toc-tldr&quot;&gt;TL;DR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#preamble&quot; id=&quot;markdown-toc-preamble&quot;&gt;Preamble&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisities&quot; id=&quot;markdown-toc-prerequisities&quot;&gt;Prerequisities&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#out-of-the-box-experience&quot; id=&quot;markdown-toc-out-of-the-box-experience&quot;&gt;Out of the box experience&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#scaling-aka-resolution&quot; id=&quot;markdown-toc-scaling-aka-resolution&quot;&gt;Scaling, aka #RESOLUTION&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#hd-skins&quot; id=&quot;markdown-toc-hd-skins&quot;&gt;HD skins&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fixing-the-rotation-in-sd-skins&quot; id=&quot;markdown-toc-fixing-the-rotation-in-sd-skins&quot;&gt;Fixing the rotation in SD skins&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#font-conversion&quot; id=&quot;markdown-toc-font-conversion&quot;&gt;Font conversion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sticking-scratch-laser&quot; id=&quot;markdown-toc-sticking-scratch-laser&quot;&gt;Sticking scratch laser&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#primer-on-lr2-skin-format&quot; id=&quot;markdown-toc-primer-on-lr2-skin-format&quot;&gt;Primer on LR2 skin format&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lift&quot; id=&quot;markdown-toc-lift&quot;&gt;Lift&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lifting-missing-elements&quot; id=&quot;markdown-toc-lifting-missing-elements&quot;&gt;Lifting missing elements&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lift-cover&quot; id=&quot;markdown-toc-lift-cover&quot;&gt;Lift cover&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ex-hard-and-assist-gauges&quot; id=&quot;markdown-toc-ex-hard-and-assist-gauges&quot;&gt;EX-HARD and ASSIST gauges&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gn-display&quot; id=&quot;markdown-toc-gn-display&quot;&gt;GN display&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fast-and-slow&quot; id=&quot;markdown-toc-fast-and-slow&quot;&gt;FAST and SLOW&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#built-in-display&quot; id=&quot;markdown-toc-built-in-display&quot;&gt;Built-in display&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#bring-your-own-fastslows&quot; id=&quot;markdown-toc-bring-your-own-fastslows&quot;&gt;Bring Your Own Fastslows&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#bilinear-filtering&quot; id=&quot;markdown-toc-bilinear-filtering&quot;&gt;Bilinear filtering&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#skin-elements-not-loading&quot; id=&quot;markdown-toc-skin-elements-not-loading&quot;&gt;Skin elements not loading?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#closing-words&quot; id=&quot;markdown-toc-closing-words&quot;&gt;Closing words&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sources&quot; id=&quot;markdown-toc-sources&quot;&gt;Sources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;LR2 play skins can be made to work with beatoraja like it was a native skin&lt;/li&gt;
+  &lt;li&gt;Depending on what you want to achieve, you might only need to convert a couple files and change some in-game settings, OR you may need to dive into the skin files themselves and do some dirty coding work&lt;/li&gt;
+  &lt;li&gt;No, I don’t know how to fix Bluewhite or KCOOL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;preamble&quot;&gt;Preamble&lt;/h2&gt;
 &lt;p&gt;As a “rytmiczny świr” I have always tried to convince as many people as possible to try out BMS. And if someone is already a BMS playa, I try and make them to switch away from LR2 to beatoraja. There &lt;em&gt;might&lt;/em&gt; be slight fanboyism here at play, but in the grand scheme of things they’d be better off playing on software that was not abandoned 10 years ago and that doesn’t force you to use outdated standards (background videos only in .mpg format, &lt;em&gt;sheesh&lt;/em&gt;).
 One of the “against” points I tend to face is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;will my favourite skin work?&lt;/code&gt; The answer is “yes”, because exch-bms2 - the main author of beatoraja - has implemented &lt;strong&gt;backwards compability for Lunatic Rave 2 themes&lt;/strong&gt; in the beatoraja skin format. 
 Sadly it’s not all fine and dandy, as there is manual work required. If you get lucky, it might end at converting a couple files, and if not, you will need to edit the skin &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csv&lt;/code&gt; files by hand, and for that you’ll need some basic knowledge of the format.&lt;/p&gt;
@@ -47,7 +202,7 @@ There is a couple options you can tweak there, but let’s not bother with that 
 
 &lt;h2 id=&quot;scaling-aka-resolution&quot;&gt;Scaling, aka #RESOLUTION&lt;/h2&gt;
 &lt;p&gt;Beatoraja’s scaling implementation is by no means perfect. Above you saw how well it handles rotating images - that’s an issue which occurs if the skin’s intended aspect ratio differs from the game’s aspect ratio. In the example above I was running a LR2SD (thus 4:3) skin in Full HD (1920x1080, which is 16:9). Funnily enough, if you run the game in a 4:3 resolution, those issues will be gone from LR2SD skins, but there’s no telling what would happen to LR2HD skins.&lt;/p&gt;
-&lt;h1 id=&quot;hd-skins&quot;&gt;HD skins&lt;/h1&gt;
+&lt;h3 id=&quot;hd-skins&quot;&gt;HD skins&lt;/h3&gt;
 &lt;p&gt;Sadly, beatoraja has no way of telling a skin’s intended resolution/aspect ratio on its own. If you tried to load a LR2HD or LR2FHD skin like WMIX or EndlessCirculation without any prior edits, you would only see a small chunk of the screen.&lt;/p&gt;
 
 &lt;p&gt;Turns out the required edit is contained within a single line you need to place in your skin’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.lr2skin&lt;/code&gt; file. 
@@ -80,7 +235,7 @@ It’ll look something like this:&lt;/p&gt;
 
 &lt;p&gt;After that’s done you save the file and try loading a song in beatoraja. You should see that it now appears in all its glory!&lt;/p&gt;
 
-&lt;h1 id=&quot;fixing-the-rotation-in-sd-skins&quot;&gt;Fixing the rotation in SD skins&lt;/h1&gt;
+&lt;h3 id=&quot;fixing-the-rotation-in-sd-skins&quot;&gt;Fixing the rotation in SD skins&lt;/h3&gt;
 
 &lt;p&gt;The same edit will allow us to fix the oddly rotating elements in SD skins, with one side effect - now the skin will only take up a small chunk of the screen’s real estate.
 To combat this, go into skin settings (in config window or in-game through F12) and scroll down until you see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;All offset(%)&lt;/code&gt; options. These will allow us to move and resize the skin to our liking &lt;strong&gt;without affecting the internal resolution&lt;/strong&gt;, so it will not screw up the rotation again.&lt;/p&gt;
@@ -161,7 +316,7 @@ If for whatever reason the conversion doesn’t happen (may happen with filename
 &lt;/table&gt;
 
 &lt;h2 id=&quot;sticking-scratch-laser&quot;&gt;Sticking scratch laser&lt;/h2&gt;
-&lt;h4 id=&quot;if-youre-a-keyboard-player-you-can-skip-this-part&quot;&gt;If you’re a keyboard player, you can skip this part.&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;If you’re a keyboard player, you can skip this part.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Most, if not all BM controllers bind the turntable digitally to an axis (for example clockwise turn means “Up” while a counter-clockwise turn means “Down”). As an anti-ghosting measure, after you’re done turning, the axis will stay “pressed” for some time, usually around half a second. The side effect is that when you use the scratch in-game, the laser will stay on for that period - and that doesn’t look pretty. Many players have simply got used to this visual bug. The fix is pretty simple though.&lt;br /&gt;
 &lt;strong&gt;This is where we start delving into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csv&lt;/code&gt; files. The structure will be explained as we go.&lt;/strong&gt;&lt;br /&gt;
@@ -249,7 +404,7 @@ A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_&lt;/c
 
 &lt;p&gt;LR2 skins will have fundamental support for this feature in beatoraja, but only partially.&lt;/p&gt;
 
-&lt;h1 id=&quot;lifting-missing-elements&quot;&gt;Lifting missing elements&lt;/h1&gt;
+&lt;h3 id=&quot;lifting-missing-elements&quot;&gt;Lifting missing elements&lt;/h3&gt;
 &lt;p&gt;The program is not taking shots in the dark on what should be lifted and what should be not, so on its own it only lifts element that it’s sure about - notes, judge line, judgements and combo - while leaving everything else intact. Those intact elements include judge detail (ghost), judgeline glow, lasers and bombs. To fix these, we’ll need to edit each call with one simple parameter.&lt;/p&gt;
 
 &lt;p&gt;Let’s go back to the bit of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csv&lt;/code&gt; I showed you in the previous point - you can see that there is three &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;op&lt;/code&gt; fields. Actually there’s an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;op4&lt;/code&gt; field available which was barely used in LR2 (it was only used to signal rotation of the element when the scratch is used), but it’s got a new purpose in beatoraja.&lt;br /&gt;
@@ -315,7 +470,7 @@ If you set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&g
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;lift-cover&quot;&gt;Lift cover&lt;/h1&gt;
+&lt;h3 id=&quot;lift-cover&quot;&gt;Lift cover&lt;/h3&gt;
 &lt;p&gt;On the images above you can see that even after lifting the missing elements there’s still a glaring sonuvabitch of a hole left between the buttons and the judge line. While you could bake in a ghetto lift cover for one specific lift height, beatoraja offers us a far more elegant solution: a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LIFT&lt;/code&gt; call. In short it works like a lane cover for lift. Wow.&lt;/p&gt;
 
 &lt;p&gt;First of all we need to decide what do want to use as a lift cover. I like to use the default lane cover for the skin, but you may want to add your own thing, or use what’s the current lanecover using. Here I’m only going to cover the process of using a single image - for reference on adding a selection, refer to how lane cover is implemented in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.lr2skin&lt;/code&gt; file.&lt;/p&gt;
@@ -431,7 +586,7 @@ Long story short, there’s two ways going about this, either:&lt;/p&gt;
   &lt;li&gt;(Re)implement your own Fast/Slow display (requires (re)writing a bit of the code related to showing F/S)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;built-in-display&quot;&gt;Built-in display&lt;/h1&gt;
+&lt;h3 id=&quot;built-in-display&quot;&gt;Built-in display&lt;/h3&gt;
 &lt;p&gt;Each LR2 skin loaded into beatoraja can make use of the built-in fast/slow display, which can be in traditional text form, or can show how much miliseconds were you off.
 All of this and positioning of the detail can be changed in skin settings.&lt;/p&gt;
 
@@ -440,7 +595,7 @@ All of this and positioning of the detail can be changed in skin settings.&lt;/p
 
 &lt;p&gt;While this is very simple to set up, respects LIFT options on its own, and is fully movable and customizable, you’re stuck with the default font (the same used for all the tickers at the top of the screen), which you may not end up liking.&lt;/p&gt;
 
-&lt;h1 id=&quot;bring-your-own-fastslows&quot;&gt;Bring Your Own Fastslows&lt;/h1&gt;
+&lt;h3 id=&quot;bring-your-own-fastslows&quot;&gt;Bring Your Own Fastslows&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;This part can be also applied if you want to implement your own F/S display&lt;/strong&gt;
 Certain LR2 skins like WMIX or Bluewhite were designed to take advantage of certain LR2 hacks, which implemented a Fast/Slow display. While there is F/S stuff exposed to the skinmakers, it’s fundamentally different in beatoraja, so there is more work involved in re-enabling the display.&lt;/p&gt;
 
@@ -506,9 +661,13 @@ Don’t remember to set &lt;code class=&quot;language-plaintext highlighter-roug
 &lt;p&gt;Next time someone tells you that they won’t switch to beatoraja because they can’t carry over their favourite skin, you can tell them to fuck right off!
 Writing this entire thing helped me understand how LR2 (and in turn, beatoraja) skins work under the hood, and that may push me into writing my own skin one day.&lt;/p&gt;
 
+&lt;p&gt;Naturally I’ll share the LR2 skin files I’ve edited for all of this, so that you can see and compare the changes yourself.&lt;br /&gt;
+&lt;a href=&quot;/assets/lr2.zip&quot;&gt;LR2 Standard 7keys 1P with Lift, EXH gauges and GN display&lt;/a&gt; (remember to change &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;All offset(%)&lt;/code&gt; values in settings)&lt;br /&gt;
+&lt;a href=&quot;/assets/wmix.zip&quot;&gt;WMIX AC 1P with Lift, EXH gauges, GN and F/S + Wide 1P with just the F/S&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;While I’m glad that all of the things I described above are possible, I really feel that the majority can (and should) be integrated into beatoraja’s code. Hell, LR2’s “press 4 and arrows” way of achieving Lift works better than beatoraja’s out of the box solution! Of course, it gets knocked out of the park once you add edits to the skin, but you shouldn’t &lt;em&gt;need&lt;/em&gt; to do that yourself!&lt;/p&gt;
 
-&lt;p&gt;I really hope this comes in handy to anyone who’s interested in general skinning manners. Gotta make that BMS cab pretty.&lt;/p&gt;
+&lt;p&gt;I really hope this comes in handy to anyone who’s interested in general skinning manners. To my knowledge this is the first article on the topic fully in English. Gotta make that BMS cab pretty.&lt;/p&gt;
 
 &lt;p&gt;And before you ask: No, I couldn’t get KCOOL or Bluewhite to work properly with beatoraja. There’s just something odd about them that beatoraja doesn’t like. If &lt;em&gt;you&lt;/em&gt; do figure out what’s wrong with them, please get in touch.&lt;/p&gt;
 
@@ -517,4 +676,4 @@ Writing this entire thing helped me understand how LR2 (and in turn, beatoraja) 
   &lt;li&gt;&lt;a href=&quot;https://asa-otoge.hatenablog.com/entry/2020/05/29/142421&quot;&gt;LR2用のスキンをbeatoraja特有機能に対応させる by Asa-Otoge&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/ovnz/blanket/blob/main/prop.lua&quot;&gt;prop.lua from the Blanket result skin by ovnz&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/exch-bms2/beatoraja&quot;&gt;beatoraja Github repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Preamble As a “rytmiczny świr” I have always tried to convince as many people as possible to try out BMS. And if someone is already a BMS playa, I try and make them to switch away from LR2 to beatoraja. There might be slight fanboyism here at play, but in the grand scheme of things they’d be better off playing on software that was not abandoned 10 years ago and that doesn’t force you to use outdated standards (background videos only in .mpg format, sheesh). One of the “against” points I tend to face is will my favourite skin work? The answer is “yes”, because exch-bms2 - the main author of beatoraja - has implemented backwards compability for Lunatic Rave 2 themes in the beatoraja skin format. Sadly it’s not all fine and dandy, as there is manual work required. If you get lucky, it might end at converting a couple files, and if not, you will need to edit the skin .csv files by hand, and for that you’ll need some basic knowledge of the format.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author></entry></feed>
