@@ -1,120 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="marysiamzawka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="marysiamzawka.github.io/" rel="alternate" type="text/html" /><updated>2021-01-29T17:13:52+01:00</updated><id>marysiamzawka.github.io/feed.xml</id><title type="html">Mr. Mary’s Ramblings</title><subtitle>I wrote this thing only to not clog up others' Twitter feed with my stuff (I ain't no Foone)</subtitle><entry><title type="html">WFIX - WMIX HD has been made beatoraja-compliant</title><link href="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html" rel="alternate" type="text/html" title="WFIX - WMIX HD has been made beatoraja-compliant" /><published>2021-01-22T09:50:35+01:00</published><updated>2021-01-22T09:50:35+01:00</updated><id>marysiamzawka.github.io/2021/01/22/wmix-beatoraja</id><content type="html" xml:base="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#overview&quot; id=&quot;markdown-toc-overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#changelog&quot; id=&quot;markdown-toc-changelog&quot;&gt;Changelog&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#features-left-out-on-purpose&quot; id=&quot;markdown-toc-features-left-out-on-purpose&quot;&gt;Features left out on purpose&lt;/a&gt;&lt;/li&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="marysiamzawka.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="marysiamzawka.github.io/" rel="alternate" type="text/html" /><updated>2021-05-07T17:43:02+02:00</updated><id>marysiamzawka.github.io/feed.xml</id><title type="html">Mr. Mary’s Ramblings</title><subtitle>I wrote this thing only to not clog up others' Twitter feed with my stuff (I ain't no Foone)</subtitle><entry><title type="html">proste gówno - a simple result skin for beatoraja</title><link href="marysiamzawka.github.io/2021/05/07/prostegowno.html" rel="alternate" type="text/html" title="proste gówno - a simple result skin for beatoraja" /><published>2021-05-07T10:00:00+02:00</published><updated>2021-05-07T10:00:00+02:00</updated><id>marysiamzawka.github.io/2021/05/07/prostegowno</id><content type="html" xml:base="marysiamzawka.github.io/2021/05/07/prostegowno.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#proste-gówno&quot; id=&quot;markdown-toc-proste-gówno&quot;&gt;Proste Gówno&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#features&quot; id=&quot;markdown-toc-features&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#customization&quot; id=&quot;markdown-toc-customization&quot;&gt;Customization&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#download&quot; id=&quot;markdown-toc-download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#screenshots&quot; id=&quot;markdown-toc-screenshots&quot;&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#download&quot; id=&quot;markdown-toc-download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#installation-instructions&quot; id=&quot;markdown-toc-installation-instructions&quot;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#credits&quot; id=&quot;markdown-toc-credits&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;proste-gówno&quot;&gt;Proste Gówno&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/result/pass.jpg&quot; alt=&quot;screen1&quot; /&gt;
+&lt;img src=&quot;/assets/result/fail.jpg&quot; alt=&quot;screen2&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Simple as shit&lt;/li&gt;
+  &lt;li&gt;Clear type, graph, song title + table level, PG/GR/GD/BD/PR/Misscount, grade and F/S balance&lt;/li&gt;
+  &lt;li&gt;Smol (24k without assets)&lt;/li&gt;
+  &lt;li&gt;All features done purely in Lua (only external assets are the font and the backgrounds)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;customization&quot;&gt;Customization&lt;/h2&gt;
+
+&lt;p&gt;None. No need&lt;/p&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/result/proste gówno.7z&quot;&gt;v1.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">Collection of my beatoraja and LR2 skin edits</title><link href="marysiamzawka.github.io/2021/02/22/skin-edits.html" rel="alternate" type="text/html" title="Collection of my beatoraja and LR2 skin edits" /><published>2021-02-22T09:00:00+01:00</published><updated>2021-02-22T09:00:00+01:00</updated><id>marysiamzawka.github.io/2021/02/22/skin-edits</id><content type="html" xml:base="marysiamzawka.github.io/2021/02/22/skin-edits.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#overview&quot; id=&quot;markdown-toc-overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#simple-play-by-mnpyprrn&quot; id=&quot;markdown-toc-simple-play-by-mnpyprrn&quot;&gt;simple-play by @mnpyprrn&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#modifier-ribbons&quot; id=&quot;markdown-toc-modifier-ribbons&quot;&gt;Modifier ribbons&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#3x1-bga-block&quot; id=&quot;markdown-toc-3x1-bga-block&quot;&gt;3x1 BGA block&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#partyparrot-bombs&quot; id=&quot;markdown-toc-partyparrot-bombs&quot;&gt;Partyparrot bombs&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lr2-full-combo-animation&quot; id=&quot;markdown-toc-lr2-full-combo-animation&quot;&gt;LR2 full combo animation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#chomikbox-hamster-mascot&quot; id=&quot;markdown-toc-chomikbox-hamster-mascot&quot;&gt;ChomikBox hamster mascot&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#english-translation-for-the-cs-graph&quot; id=&quot;markdown-toc-english-translation-for-the-cs-graph&quot;&gt;English translation for the CS graph&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#my-personal-7key-settings-file&quot; id=&quot;markdown-toc-my-personal-7key-settings-file&quot;&gt;My personal 7key settings file&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#m-select-by-mnpyprrn&quot; id=&quot;markdown-toc-m-select-by-mnpyprrn&quot;&gt;m-select by @mnpyprrn&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#translated-panels&quot; id=&quot;markdown-toc-translated-panels&quot;&gt;Translated panels&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;Following my previous post, this is WMIX HD by Wisp, which I have edited to take advantage of beatoraja-specific features.&lt;/p&gt;
+&lt;p&gt;Since I’ve been doing a lot of small skin edits that I’ve been sharing in small circles, I’ve decided to group them in this post.
+I will update this post whenever I create an edit and share it somewhere.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;This fix is meant for beatoraja. It is not required for LR2, nor will it bring any additional features for that player.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You’re free to share this anywhere or include it in any skins, but please at least give credit :D&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;/h2&gt;
+&lt;h2 id=&quot;simple-play-by-mnpyprrn&quot;&gt;simple-play by &lt;a href=&quot;https://twitter.com/mnpyprrn&quot;&gt;@mnpyprrn&lt;/a&gt;&lt;/h2&gt;
 
+&lt;h3 id=&quot;modifier-ribbons&quot;&gt;&lt;a href=&quot;/assets/skinmod/Ribbons.zip&quot;&gt;Modifier ribbons&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/skinmod/ribbons.png&quot; alt=&quot;ribbons&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Inspired by Remi and K-COOL skins. Rectangular ribbons displaying current game modifiers:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Unpacked .dxa fonts
-    &lt;ul&gt;
-      &lt;li&gt;beatoraja is not able to process &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dxa&lt;/code&gt; files on its own&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Fixed Lift
-    &lt;ul&gt;
-      &lt;li&gt;Lift cover is present, elements like Ghost, lasers and bombs now respect Lift&lt;/li&gt;
-      &lt;li&gt;Lift cover uses the current Lane Cover texture. If you wish to change it, add your own texture into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#IMAGE&lt;/code&gt; block and change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gr&lt;/code&gt; number in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; (refer to my previous post)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Added EX-Hard and (Assist) Easy gauges
-    &lt;ul&gt;
-      &lt;li&gt;They use the default Yellow and Blue gauge textures respectively&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Fixed Fast/Slow display
-    &lt;ul&gt;
-      &lt;li&gt;Previously F/S would not work because of the changes in the underlying mechanics&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Added Green Number and Lift Height display
-    &lt;ul&gt;
-      &lt;li&gt;These will respect the presence of both Lane Cover and Lift Cover&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Enabled filtering for all skin elements
-    &lt;ul&gt;
-      &lt;li&gt;This is to help with scaling when playing in non-720p resolutions&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Added a “beatoraja” effector badge
-    &lt;ul&gt;
-      &lt;li&gt;Originally when there was no effect in use, this badge would say “Lunatic Rave”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Fixed an issue with oversaturated #BACKBGA images
-    &lt;ul&gt;
-      &lt;li&gt;Caused by beatoraja’s mishandling of “shadow” effects&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Fixed an issue where 1P notes would appear as white and yellow blocks in the Double Play Wide skin
-    &lt;ul&gt;
-      &lt;li&gt;Caused by an oddity in beatoraja’s parsing of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_NOTE&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_NOTE&lt;/code&gt; calls&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Fixed an issue where a white rectangle would appear on certain “Stage Failed” shutters
-    &lt;ul&gt;
-      &lt;li&gt;Caused by beatoraja’s different way of rendering textures which are placed outside of the original image’s boundaries&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;lane modifier&lt;/li&gt;
+  &lt;li&gt;difficulty&lt;/li&gt;
+  &lt;li&gt;gauge (and GAS)&lt;/li&gt;
+  &lt;li&gt;auto/replay&lt;/li&gt;
+  &lt;li&gt;LN mode (if LNs are present)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;features-left-out-on-purpose&quot;&gt;Features left out on purpose&lt;/h3&gt;
+&lt;p&gt;Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/extension&lt;/code&gt; and enable by setting one of the “Extension front” options to “Ribbons”.
+Refer to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parts.lua&lt;/code&gt; file for placement options.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I’ve included some code related to displaying the current stage (For courses), but I couldn’t get to work. If you know how to make it work, please get in touch!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3x1-bga-block&quot;&gt;&lt;a href=&quot;/assets/skinmod/BGA Block.zip&quot;&gt;3x1 BGA block&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/skinmod/bgab.png&quot; alt=&quot;bgab&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Can be used as a background filler if, for example, you have your playfield centered.
+Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/extension&lt;/code&gt; and enable by setting one of the “Extension front” options to “BGA Block”.
+Refer to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parts.lua&lt;/code&gt; file for placement options.&lt;/p&gt;
+
+&lt;h3 id=&quot;partyparrot-bombs&quot;&gt;&lt;a href=&quot;/assets/skinmod/papuga.zip&quot;&gt;Partyparrot bombs&lt;/a&gt;&lt;/h3&gt;
+
+&lt;video controls=&quot;&quot; preload=&quot;metadata&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/assets/skinmod/parrot.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+
+&lt;p&gt;Party parrot bombs originally made for LITONE by &lt;a href=&quot;http://twitter.com/Chazoshtare&quot;&gt;Chazoshtare&lt;/a&gt;, which I’ve adapted for simple-play.
+Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/bomb&lt;/code&gt; and enable by setting the “Bomb” and “Bomb PG” options to “papuga”.
+Refer to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bomb.lua&lt;/code&gt; file if you want to edit parrots’ size.&lt;/p&gt;
+
+&lt;h3 id=&quot;lr2-full-combo-animation&quot;&gt;&lt;a href=&quot;/assets/skinmod/lr2fc.zip&quot;&gt;LR2 full combo animation&lt;/a&gt;&lt;/h3&gt;
+
+&lt;video controls=&quot;&quot; preload=&quot;metadata&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/assets/skinmod/lr2fc.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+
+&lt;p&gt;Simple addon which executes an animation when a full combo is reached.
+Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/fullcombo&lt;/code&gt; and enable by setting the “Fullcombo” option to “LR2”.&lt;/p&gt;
+
+&lt;h3 id=&quot;chomikbox-hamster-mascot&quot;&gt;&lt;a href=&quot;/assets/skinmod/chomikbox.zip&quot;&gt;ChomikBox hamster mascot&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/skinmod/chomik.png&quot; alt=&quot;chomik&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;An 8 frame animation of the Chomikuj.pl mascot.
+Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/moving_mascot&lt;/code&gt; and enable by setting the “Mascot” option to “MOVING” and the “Moving Mascot” option to “chomikbox”.&lt;/p&gt;
+
+&lt;h3 id=&quot;english-translation-for-the-cs-graph&quot;&gt;&lt;a href=&quot;/assets/skinmod/CSgraph.zip&quot;&gt;English translation for the CS graph&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/skinmod/engraph.png&quot; alt=&quot;engraph&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Small edit to the CS graph which translates the only text strings present there.&lt;/p&gt;
+
+&lt;p&gt;Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/scoregraph/CS_1p&lt;/code&gt; and enable by setting the “Scoregraph” option to “CS_1p”.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-personal-7key-settings-file&quot;&gt;&lt;a href=&quot;/assets/skinmod/Marysettings.zip&quot;&gt;My personal 7key settings file&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;My settings file which aims to reflect the scale and placement of the OADX+ CS skin series, while keeping the playfield around the center of the screen.&lt;/p&gt;
+
+&lt;p&gt;Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/settings&lt;/code&gt; and enable by setting the “Settings file (7keys)” option to “Marucha CS”.&lt;/p&gt;
+
+&lt;h2 id=&quot;m-select-by-mnpyprrn&quot;&gt;m-select by &lt;a href=&quot;https://twitter.com/mnpyprrn&quot;&gt;@mnpyprrn&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;translated-panels&quot;&gt;&lt;a href=&quot;/assets/skinmod/msel_english.zip&quot;&gt;Translated panels&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/skinmod/mseleng.png&quot; alt=&quot;mseleng&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve used the .psd files supplied by Uncle Munimini himself (that’s what his Twitter handle translates to) to translate the panels from Japanese to English.&lt;/p&gt;
+
+&lt;p&gt;Unzip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/advanced&lt;/code&gt;, enable by changing “default” to “english” in the following lines in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/customize/advanced/enable.txt&lt;/code&gt; file:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Hidden cover
-    &lt;ul&gt;
-      &lt;li&gt;Realistically speaking no one is playing with Hidden on, so I did not bother implementing it
-        &lt;ul&gt;
-          &lt;li&gt;If you desire to implement it, you can make a copy of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; block and rename &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_LIFT&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_HIDDEN&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_HIDDEN&lt;/code&gt;.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;(G-)Battle skins
-    &lt;ul&gt;
-      &lt;li&gt;As far as I’m aware, it’s not possible to play in Battle mode in beatoraja, so even if I wanted to edit those skins, I’d have no way of testing.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/wmix/screen1.jpg&quot; alt=&quot;screen1&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
-&lt;img src=&quot;/assets/wmix/screen2.jpg&quot; alt=&quot;screen2&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
-&lt;img src=&quot;/assets/wmix/screen3.jpg&quot; alt=&quot;screen3&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
-&lt;img src=&quot;/assets/wmix/screen4.jpg&quot; alt=&quot;screen4&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/wmix/wfix10.7z&quot;&gt;v1.0&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;installation-instructions&quot;&gt;Installation instructions&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Make sure you have WMIX HD in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/beatoraja/skins&lt;/code&gt;/ folder&lt;/li&gt;
-  &lt;li&gt;Unpack the WFIX zip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/beatoraja/skins/&lt;/code&gt;, merging the contents of two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WMIX_HD&lt;/code&gt; folders&lt;/li&gt;
-  &lt;li&gt;Go overjoy)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Wisp&lt;/strong&gt; for making WMIX HD&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Mr. Mary&lt;/strong&gt; for applying the beatoraja edits&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Asa-otoge&lt;/strong&gt; for making &lt;a href=&quot;https://asa-otoge.hatenablog.com/entry/2020/05/29/142421&quot;&gt;the original blog post&lt;/a&gt; describing the skin modding process&lt;/li&gt;
+  &lt;li&gt;default_achievement&lt;/li&gt;
+  &lt;li&gt;default_chart&lt;/li&gt;
+  &lt;li&gt;default_optionpanel2&lt;/li&gt;
+  &lt;li&gt;default_ranking&lt;/li&gt;
+  &lt;li&gt;default_rivaldata&lt;/li&gt;
+  &lt;li&gt;default_selectinfo2&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author></entry><entry><title type="html">Journey through porting LR2 play skins to beatoraja</title><link href="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html" rel="alternate" type="text/html" title="Journey through porting LR2 play skins to beatoraja" /><published>2021-01-22T09:50:35+01:00</published><updated>2021-01-22T09:50:35+01:00</updated><id>marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja</id><content type="html" xml:base="marysiamzawka.github.io/2021/01/22/lr2-skins-beatoraja.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#tldr&quot; id=&quot;markdown-toc-tldr&quot;&gt;TL;DR&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#preamble&quot; id=&quot;markdown-toc-preamble&quot;&gt;Preamble&lt;/a&gt;&lt;/li&gt;
@@ -673,7 +691,152 @@ Writing this entire thing helped me understand how LR2 (and in turn, beatoraja) 
 
 &lt;h2 id=&quot;sources&quot;&gt;Sources&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://asa-otoge.hatenablog.com/entry/2020/05/29/142421&quot;&gt;LR2用のスキンをbeatoraja特有機能に対応させる by Asa-Otoge&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://asa-otoge.hatenablog.com/entry/2020/05/29/142421&quot;&gt;LR2用のスキンをbeatoraja特有機能に対応させる by Asa&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/ovnz/blanket/blob/main/prop.lua&quot;&gt;prop.lua from the Blanket result skin by ovnz&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/exch-bms2/beatoraja&quot;&gt;beatoraja Github repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author></entry><entry><title type="html">WFIX - WMIX HD has been made beatoraja-compliant</title><link href="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html" rel="alternate" type="text/html" title="WFIX - WMIX HD has been made beatoraja-compliant" /><published>2021-01-22T09:50:35+01:00</published><updated>2021-01-22T09:50:35+01:00</updated><id>marysiamzawka.github.io/2021/01/22/wmix-beatoraja</id><content type="html" xml:base="marysiamzawka.github.io/2021/01/22/wmix-beatoraja.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#overview&quot; id=&quot;markdown-toc-overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#changelog&quot; id=&quot;markdown-toc-changelog&quot;&gt;Changelog&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#features-left-out-on-purpose&quot; id=&quot;markdown-toc-features-left-out-on-purpose&quot;&gt;Features left out on purpose&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#screenshots&quot; id=&quot;markdown-toc-screenshots&quot;&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#download&quot; id=&quot;markdown-toc-download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#installation-instructions&quot; id=&quot;markdown-toc-installation-instructions&quot;&gt;Installation instructions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#credits&quot; id=&quot;markdown-toc-credits&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Following my previous post, this is WMIX HD by Wisp, which I have edited to take advantage of beatoraja-specific features.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;This fix is meant for beatoraja. It is not required for LR2, nor will it bring any additional features for that player.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unpacked .dxa fonts
+    &lt;ul&gt;
+      &lt;li&gt;beatoraja is not able to process &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dxa&lt;/code&gt; files on its own&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed Lift
+    &lt;ul&gt;
+      &lt;li&gt;Lift cover is present, elements like Ghost, lasers and bombs now respect Lift&lt;/li&gt;
+      &lt;li&gt;Lift cover uses the current Lane Cover texture. If you wish to change it, add your own texture into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#IMAGE&lt;/code&gt; block and change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gr&lt;/code&gt; number in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; (refer to my previous post)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added EX-Hard and (Assist) Easy gauges
+    &lt;ul&gt;
+      &lt;li&gt;They use the default Yellow and Blue gauge textures respectively&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed Fast/Slow display
+    &lt;ul&gt;
+      &lt;li&gt;Previously F/S would not work because of the changes in the underlying mechanics&lt;/li&gt;
+      &lt;li&gt;To enable F/S, change the “Display FAST/SLOW” option in skin settings.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added Green Number and Lift Height display
+    &lt;ul&gt;
+      &lt;li&gt;These will respect the presence of both Lane Cover and Lift Cover&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Enabled filtering for all skin elements
+    &lt;ul&gt;
+      &lt;li&gt;This is to help with scaling when playing in non-720p resolutions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added a “beatoraja” effector badge
+    &lt;ul&gt;
+      &lt;li&gt;Originally when there was no effect in use, this badge would say “Lunatic Rave”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue with oversaturated #BACKBGA images
+    &lt;ul&gt;
+      &lt;li&gt;Caused by beatoraja’s mishandling of “shadow” effects&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue where 1P notes would appear as white and yellow blocks in the Double Play Wide skin
+    &lt;ul&gt;
+      &lt;li&gt;Caused by an oddity in beatoraja’s parsing of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_NOTE&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_NOTE&lt;/code&gt; calls&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue where a white rectangle would appear on certain “Stage Failed” shutters
+    &lt;ul&gt;
+      &lt;li&gt;Caused by beatoraja’s different way of rendering textures which are placed outside of the original image’s boundaries&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue where notes and some skin elements would appear in wrong lanes when playing 5keys on 2P side or 10keys
+    &lt;ul&gt;
+      &lt;li&gt;Caused by beatoraja’s different handling of 7keys skins in 5keys play&lt;/li&gt;
+      &lt;li&gt;Thanks go to &lt;a href=&quot;https://twitter.com/AOiRO_Manbow&quot;&gt;@AOiRO_Manbow&lt;/a&gt; for coming up with a fix!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;features-left-out-on-purpose&quot;&gt;Features left out on purpose&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hidden cover
+    &lt;ul&gt;
+      &lt;li&gt;Realistically speaking no one is playing with Hidden on, so I did not bother implementing it
+        &lt;ul&gt;
+          &lt;li&gt;If you desire to implement it, you can make a copy of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; block and rename &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_LIFT&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_LIFT&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#SRC_HIDDEN&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#DST_HIDDEN&lt;/code&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;(G-)Battle skins
+    &lt;ul&gt;
+      &lt;li&gt;As far as I’m aware, it’s not possible to play in Battle mode in beatoraja, so even if I wanted to edit those skins, I’d have no way of testing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/wmix/screen1.jpg&quot; alt=&quot;screen1&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
+&lt;img src=&quot;/assets/wmix/screen2.jpg&quot; alt=&quot;screen2&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
+&lt;img src=&quot;/assets/wmix/screen3.jpg&quot; alt=&quot;screen3&quot; class=&quot;img-responsive&quot; /&gt;  &lt;br /&gt;
+&lt;img src=&quot;/assets/wmix/screen4.jpg&quot; alt=&quot;screen4&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;/assets/wmix/wfix11.7z&quot;&gt;v1.1&lt;/a&gt;&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Fixed misaligned skin elements when playing 5keys 2P or 10keys&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/wmix/wfix101.7z&quot;&gt;v1.01&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Added missing shutter images&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/wmix/wfix10.7z&quot;&gt;v1.0&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Initial release&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installation-instructions&quot;&gt;Installation instructions&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Make sure you have WMIX HD in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/beatoraja/skins&lt;/code&gt;/ folder&lt;/li&gt;
+  &lt;li&gt;Unpack the WFIX zip into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/beatoraja/skins/&lt;/code&gt;, merging the contents of two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WMIX_HD&lt;/code&gt; folders&lt;/li&gt;
+  &lt;li&gt;Go overjoy)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://twitter.com/wisp_13&quot;&gt;Wisp&lt;/a&gt;&lt;/strong&gt; for making WMIX HD&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mr. Mary&lt;/strong&gt; for applying the beatoraja edits&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://twitter.com/Asa_Poke_pawa&quot;&gt;Asa&lt;/a&gt;&lt;/strong&gt; for making &lt;a href=&quot;https://asa-otoge.hatenablog.com/entry/2020/05/29/142421&quot;&gt;the original blog post&lt;/a&gt; describing the skin modding process&lt;/li&gt;
+  &lt;li&gt;Other contributors
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://twitter.com/AOiRO_Manbow&quot;&gt;@AOiRO_Manbow&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author></entry></feed>
