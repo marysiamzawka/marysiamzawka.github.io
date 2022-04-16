@@ -1,5 +1,5 @@
 {
-	"name": "Scratch Daniels",
+	"name": "皿段位認定2",
 	"symbol": "◎",
 	"course": [
 		[
@@ -14,17 +14,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -46,17 +46,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -78,17 +78,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -110,17 +110,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -142,17 +142,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -174,17 +174,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -206,17 +206,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -238,17 +238,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -270,17 +270,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -302,17 +302,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -334,17 +334,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -366,17 +366,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -398,17 +398,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -430,17 +430,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -462,17 +462,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -494,17 +494,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -526,17 +526,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
@@ -558,17 +558,17 @@
 					{
 						"name": "bronzemedal",
 						"missrate": 7.5,
-						"scorerate": 0
+						"scorerate": 0.0
 					},
 					{
 						"name": "silvermedal",
 						"missrate": 5.0,
-						"scorerate": 70
+						"scorerate": 70.0
 					},
 					{
 						"name": "goldmedal",
 						"missrate": 2.5,
-						"scorerate": 85
+						"scorerate": 85.0
 					}
 				],
 				"md5": [
