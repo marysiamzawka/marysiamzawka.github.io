@@ -1,1310 +1,584 @@
 {
-"name": "皿段位認定2",
-"course": [
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 七級",
-		"hash": [
+	"name": "Scratch Daniels",
+	"symbol": "◎",
+	"course": [
+		[
 			{
-				"title": "お皿練習曲[試作品]",
-				"genre": "修行",
-				"artist": "英検４級",
-				"md5": "3d3d5255905b468abe944bd17699e1f2",
-				"sha256": "4877cb17936db5f8433024b365c264164449f55a556853a41d2a811f9bcf8419",
-				"charthash": "a94999a10c295820d060b7d601c75cc1919bd8dcc8f08b96733b9126e84b71a1"
+				"name": "皿段位認定2 七級",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"3d3d5255905b468abe944bd17699e1f2",
+					"d49d1a220c1be93ac3dda1ed24c11728",
+					"872727c4dc8116897bfd2316dd8a0389",
+					"aa47eec9e2483891f85f116ad5bc481e"
+				],
+				"style": "red"
 			},
 			{
-				"title": "Pure Ruby [Light]_ALLSCR ver",
-				"genre": "TRANCE CORE",
-				"artist": "SHIKI / modified to ASCR_Tool",
-				"md5": "d49d1a220c1be93ac3dda1ed24c11728",
-				"sha256": "4fab53fb745eb7ca73b036dda56a9f8c1fbe5d758f58d242889c8488e2164df4",
-				"content": 3,
-				"stagefile": "purerubytitle.bmp",
-				"charthash": "65af982ed52c67bba91ef28c1f4ef27ff95b5331b4378a5ffb021fed12cfec92"
+				"name": "皿段位認定2 六級",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"f496ca4b6bb0d3364ea591bb2ca5e6e5",
+					"45b4dc4124e2837d5ec87934903479ad",
+					"e7060267ec5bc4bf7064483f17f84bf9",
+					"0885845f9067ef127cafe48a8fc7bd1b"
+				],
+				"style": "red"
 			},
 			{
-				"title": "皿投げプリンセス",
-				"genre": "BROKEN RAP/姫コア[NORMAL]",
-				"artist": "o.s.gateと重音テト姫",
-				"md5": "872727c4dc8116897bfd2316dd8a0389",
-				"sha256": "526d4aefb3547f725e0768b3cf1fed68a8632f1023657bf2574c09895ca1ed6b",
-				"content": 3,
-				"charthash": "3eeb3966641cbceace30c7478dda302a85851ba3cebaba54aca9a22c2a3127d8"
+				"name": "皿段位認定2 五級",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"de11613763c1aa998b9d85e2f63b64b2",
+					"21ad5555b6e9aebbc7ad95ebbab1a611",
+					"820004612007ca3f3b5dd17aa1f1712d",
+					"a69ef5923ed5a8b1b30b5df32de26f13"
+				],
+				"style": "red"
 			},
 			{
-				"title": "naughty girl@Excellency's Palace",
-				"genre": "TECH-BREAKBEATS",
-				"artist": "DJ Haruka MAD Izm*",
-				"md5": "aa47eec9e2483891f85f116ad5bc481e",
-				"sha256": "39bfd35ae9465efcd87baabce1e4f09cfed41d5598ed1cec225d0498c5f65072",
-				"content": 3,
-				"banner": "banner.png",
-				"charthash": "8d4f211732fc71750acc41fda500006dfa2b6c817f12df3dd79bcd5ac485c69d"
+				"name": "皿段位認定2 四級",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"81ab1dddee58699c52e474d1962f5fc6",
+					"45400e292f7e1f35f5c66eefdb0fd19d",
+					"a81096c5160f406c9cec45b094e8c6d7",
+					"af248c48b7ecd1931bed175b4c80c755"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 三級",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"c27648e170f545877eadacf6427e7324",
+					"cc2f28a9ebf06e9328b4f85367401012",
+					"9b1aad42e6faf6882bfd1361dd77a94c",
+					"87da3e5636873ef817391cf0e3e0a6c5"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 二級",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"f75e2b23fd6cc6dc82b1f5ea28afc11c",
+					"94a4e9aeb457b5c8c714d14b2a618f9b",
+					"5cb08ee8f6a44e56f274897765ea89a1",
+					"36734a52f3e052a4bc0f744c4e282952"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 一級",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"2c1fd9cd9912db67f15785ad86ee43e1",
+					"fb4de222e2abea567651a3e2e1ae3ce1",
+					"2290a0f15dd0387806b03417338fa741",
+					"41b6863d6b6d218c335d0d8ea62f1033"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 初段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"e4ce0e7b32dcf2be5cbab112da3edf75",
+					"714461caefdead80e1222335a1f62db3",
+					"da501cc53023d990f9cb1566fdfa8c15",
+					"52c60cf7e8bbb32ed46e9e199546b510"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 二段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"f946889a19787e7e9d405dc17d3e1c1f",
+					"f390abb6b59b72bba9c7dba752cabc12",
+					"eebd547affb449235039090819de4e0f",
+					"289de1af0f13830112203eb76410a4d6"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 三段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"d604130c9a409cde9827500d8534b967",
+					"2e4fbaa3f9968ca6cd5239049520ad1b",
+					"d11d6bcf5d208fedb19843f3d0cfc02b",
+					"ed40d68d31873d52dd87cd1cf7896113"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 四段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"a16d63ac359d357f1ad0feb85ff0b89f",
+					"937b20699bb0df1b236c2fb77c95587f",
+					"68dd0f1a8f598f1496936c2c74446467",
+					"6ac4a7d3a047e307ce12272d4f6a7751"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 五段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"38489aa89b243feecb0b007f4dfa1c69",
+					"d312e5f3b5a3f1211b96f764a0e3ac91",
+					"cda3343fd00d31998b74fe74f664b941",
+					"ed4068be79d17221c1ee74fe44fbd1fe"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 六段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"888333edc187e10c3052421f9e8fd103",
+					"d047727ac1e04f53c2611a7383123403",
+					"b3125dad9faddd06386110933be53143",
+					"11ca0610aeb3b564ea77d95959ac6888"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 七段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"56dbebc0002f45164112679266a08895",
+					"6bd2f03d509e62e20a3d301771b0de88",
+					"766ca3606583ca51ee87a97389a8700a",
+					"78a9cdaf70047109cd4681fce9f1e1fc"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 八段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"d05a25b1cca3f83ad10894f89303012d",
+					"f346c17c76b5a5b3457d33cc462a9925",
+					"93059fe84d521fb5885122f82e384ddd",
+					"189b677f1d3c310243d4586388e21497"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 九段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"169dc9f915a9e43b8488a20e2fb6df51",
+					"0dac32ca8ba27e6f66146e1054e43674",
+					"336b6155717ce1841028482f6470d4df",
+					"180d8babdfd3ef6f0066d27ab09b92b3"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 十段",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"e2d6ef694fcf6caffd6d436e8fd4a38c",
+					"f818fb0fbf819b395877ea7566eda5ac",
+					"41418f90b426431c94754098e74e2c0a",
+					"ce2f0b5d9752ece78bef80c2506bf871"
+				],
+				"style": "red"
+			},
+			{
+				"name": "皿段位認定2 皆伝",
+				"constraint": [
+					"mirror",
+					"gauge_lr2",
+					"ln"
+				],
+				"trophy": [
+					{
+						"name": "bronzemedal",
+						"missrate": 7.5,
+						"scorerate": 0
+					},
+					{
+						"name": "silvermedal",
+						"missrate": 5,
+						"scorerate": 70
+					},
+					{
+						"name": "goldmedal",
+						"missrate": 2.5,
+						"scorerate": 85
+					}
+				],
+				"md5": [
+					"89b6c441fd021c872c63453c3041d7a9",
+					"1a89ba0ab527113fc3d00d63870a69a4",
+					"7a80295d155c62c11858d0d586d20f3b",
+					"f11050396cb3fd3156d4804edeece18a"
+				],
+				"style": "red"
 			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 六級",
-		"hash": [
-			{
-				"title": "Caterpillar Song",
-				"genre": "TRIP HOP",
-				"artist": "溥儀ゆら原子の力しきみmashana与作",
-				"md5": "f496ca4b6bb0d3364ea591bb2ca5e6e5",
-				"sha256": "1d8eddd61393af3895a692c3973bb970e6622cc08022694dfaf251f6a6631ba4",
-				"content": 3,
-				"stagefile": "title.bmp",
-				"charthash": "c5d335f815ed970636eed6d30592aaa4e220ef9684bbcbe6912c91d58608a4f5"
-			},
-			{
-				"title": "F13 [SP Scratch.ver Normal]",
-				"genre": "BETRAYAL",
-				"artist": "Judah / obj: sara",
-				"subartist": "BGA:Lucifer",
-				"md5": "45b4dc4124e2837d5ec87934903479ad",
-				"sha256": "4f8f989f34b727d5019dafbc440e35053632bedb2c8bd0b65a1c99eeffc8fd4c",
-				"content": 3,
-				"stagefile": "stagefile.png",
-				"backbmp": "title.png",
-				"banner": "banner.png",
-				"charthash": "a93622464eb227d42ebeb5887571e624d12e99325f25566c2fc694b972f0647b"
-			},
-			{
-				"title": "Recollections of ageHa in 2004 [SP Scratch.ver]",
-				"genre": "TRANCE",
-				"artist": "U-hey / obj: sara",
-				"md5": "e7060267ec5bc4bf7064483f17f84bf9",
-				"sha256": "b4dacc4504770f0bc80f9788d938bcbf69018cda4c511a519d9c7a28ee1ed986",
-				"content": 2,
-				"stagefile": "titl.jpg",
-				"charthash": "7bc0de3f1e8407cf8dfa990423b9483aad56ff6f3f25f109b860a289e8c49dd8"
-			},
-			{
-				"title": "Total Eclipse of the Sun [SP Scratch.ver Normal]",
-				"genre": "reconstruction",
-				"artist": "-45 / obj: sara",
-				"md5": "0885845f9067ef127cafe48a8fc7bd1b",
-				"sha256": "b0831c279940d5f029ad08e17f2195be54cc5bae778daa85fd705ca45f72e4cd",
-				"content": 3,
-				"stagefile": "Title.bmp",
-				"charthash": "0f6d59aa41234625df5b7d6487c1d08bac919287ff0b6467e8ebf6a3c5c8b0dc"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 五級",
-		"hash": [
-			{
-				"title": "Ancient Memory N mix [yumether◎]",
-				"genre": "Ancient beats",
-				"artist": "ZUN (Arr.sun3) / obj:夢瑠",
-				"md5": "de11613763c1aa998b9d85e2f63b64b2",
-				"sha256": "8079a58cd03d3b11c741a537f8a8b557b7889a48c69e00fec2c9398f46b69ab3",
-				"content": 3,
-				"stagefile": "title_01_b.jpg",
-				"charthash": "2ac8af8104a097c0373348a496f1978cb97b7b8d19b51bc830c985ac60cc43a6"
-			},
-			{
-				"title": "うぉ～る☆くらっしゃ～2chu! [SP Scratch.ver]",
-				"genre": "はーとふるぽっぷ",
-				"artist": "ワケアニ　（イラスト・クロ） / obj: sara",
-				"md5": "21ad5555b6e9aebbc7ad95ebbab1a611",
-				"sha256": "5e7d98a1ce18dd63f966cba4529c322878fa5bb99f8ee87a90c32a97f6723ddd",
-				"content": 3,
-				"stagefile": "title_00.bmp",
-				"charthash": "c4161f86ba1333d701b50b08adcc60bc5b96891d9b6ceffff2dbb7ee6991980e"
-			},
-			{
-				"title": "ダイナモと白昼夢",
-				"subtitle": "(GLITCHHOP MIX) [SP Scratch.ver]",
-				"genre": "GLITCHHOP MIX",
-				"artist": "kju8 + zen + Scarfaith / obj: sara",
-				"subartist": "MOVIE / Psyche Rhodes",
-				"md5": "820004612007ca3f3b5dd17aa1f1712d",
-				"sha256": "10eaeda046927c75b1e4146966ad7dd243e22204676ca399231633fa7d4b0566",
-				"content": 3,
-				"charthash": "edbb470dcfcf7b4cf4c16a672e0320f6cdd453c9ee451f9f33840558a62173ad"
-			},
-			{
-				"title": "locked girl@Scarlet-Devils Palace [HYPER]",
-				"genre": "TECH-BREAKBEATS",
-				"artist": "くっちー",
-				"md5": "a69ef5923ed5a8b1b30b5df32de26f13",
-				"sha256": "390e9a5523b17c8ef60f38679b7cb27a2b5d91a0bdf2f3bea9f9e63aee83f2d6",
-				"content": 3,
-				"charthash": "45b312386bde21d8ae61e5e76d3d7181ee0246b802fe0800683d81d4ef131aaf"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 四級",
-		"hash": [
-			{
-				"title": "belly dance (Consistently_Drinkin_remix) [E-皿]",
-				"genre": "hiphop",
-				"artist": "Kotira Sample / obj:いい靴",
-				"md5": "81ab1dddee58699c52e474d1962f5fc6",
-				"sha256": "affd83ded0198db485cf80895ecb65aed4d774034698eaed4803a464daa87b48",
-				"content": 3,
-				"stagefile": "ichi_title.bmp",
-				"charthash": "a539b93a701495c96fcad9075752ba025f1d100287102e8b20a795e8a6aae987"
-			},
-			{
-				"title": "ファンキーホット [7KEYS HYPER]",
-				"genre": "Hip House",
-				"artist": "BACO + kazpulse",
-				"md5": "45400e292f7e1f35f5c66eefdb0fd19d",
-				"sha256": "6e9864af5d7cf7a3d6e220710b2c204391c574992507524fcfd1c2e99f509515",
-				"content": 2,
-				"stagefile": "title.jpg",
-				"charthash": "797bfd495b35dbc25088994b1ac90cfd4fa4c0bfa15f8b59e1cf0f490dd42f6d"
-			},
-			{
-				"title": "コオリノバラ [SCRATCHE DANGEROUS]",
-				"genre": "Soul",
-				"artist": "naotyu- feat. miyu",
-				"md5": "a81096c5160f406c9cec45b094e8c6d7",
-				"sha256": "d3452319bece8131e03d4617ce6c776bdb1fc1e65ac4d5fa1bfa6b115c819b6d",
-				"content": 1,
-				"stagefile": "title.bmp",
-				"charthash": "a17e22d8e2e77e9cadc568550d835aa8597adb209291c2f15454f0d58d6a6690"
-			},
-			{
-				"title": "conflict [Caesar]",
-				"genre": "HARMONIC SCHRANZ",
-				"artist": "siromaru + cranky // movie: iimo / 差分：しー",
-				"md5": "af248c48b7ecd1931bed175b4c80c755",
-				"sha256": "0b85d1fb250758e19c547d2ce557e82fd77e0ab819555c7405badef4d3e1ee52",
-				"content": 3,
-				"stagefile": "title.bmp",
-				"charthash": "5094538870193365e94f2db1c1fb8b2b7c2156737a89008e47667f2971b8d440"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 三級",
-		"hash": [
-			{
-				"title": "The Typewriter -Yoisaraeasy-",
-				"genre": "Classic",
-				"artist": "Leroy Anderson",
-				"subartist": "MIDI:Akira BMS:krg obj:十六皿夜",
-				"md5": "c27648e170f545877eadacf6427e7324",
-				"sha256": "5d21d2743ea9f506e5cec50c15f8e6862aae0580580e5b91a16e6746949d08ca",
-				"content": 3,
-				"stagefile": "stagefile.png",
-				"banner": "banner.png",
-				"charthash": "997dfc5636c9837f4c72772b97c3efcb2cd4e61723dc1d8ce9f360961cff7501"
-			},
-			{
-				"title": "Me Tale Though [HYPER]",
-				"genre": "TECH-BREAKBEATS",
-				"artist": "ROKINA",
-				"md5": "cc2f28a9ebf06e9328b4f85367401012",
-				"sha256": "90752d4ad1574728c06d40b4b107a3d9815e0218b19205d12b43a2f2f7c81a09",
-				"content": 3,
-				"stagefile": "stagefile.png",
-				"backbmp": "title.png",
-				"banner": "banner.png",
-				"charthash": "b7100757f672bdd1d5f86d2161c2a195fc0558f318bc54bc4c22265158a621f5"
-			},
-			{
-				"title": "naughty girl@Excellency's Palace",
-				"genre": "TECH-BREAKBEATS",
-				"artist": "DJ Haruka MAD Izm*",
-				"md5": "9b1aad42e6faf6882bfd1361dd77a94c",
-				"sha256": "4b4ef6fc2d15c2b202b4678566042042465acd0ca9ed8bff2d0271a632185c8b",
-				"content": 3,
-				"banner": "banner.png",
-				"charthash": "479aa70a42bf0b986fd813493a38a6bc81f034541d1212d1d12e2fa71a2a0e66"
-			},
-			{
-				"title": "ピクニックガール [SP Scratch.ver]",
-				"genre": "ピクニカルポップス",
-				"artist": "ピクニカル男かゆき / obj: sara",
-				"md5": "87da3e5636873ef817391cf0e3e0a6c5",
-				"sha256": "b73366dded7b0de777934d071bd730949a493fbd75f17feec091f1e366e1a8aa",
-				"content": 3,
-				"charthash": "314e9c48722292ccc48aec4441062643b0d41c66fdb543ab969e550d9b82625e"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 二級",
-		"hash": [
-			{
-				"title": "funny crasher (Shift)",
-				"genre": "HAPPY GABBA",
-				"artist": "TOMA / obj:他人",
-				"md5": "f75e2b23fd6cc6dc82b1f5ea28afc11c",
-				"sha256": "2a469ca77fbf9b09cf374a2709725f1763b976a65b69f74ce5d9fb70719421e9",
-				"content": 3,
-				"stagefile": "title.bmp",
-				"charthash": "3a5160a230ee86a1829d66c2eb914755d347677c29433ecec40cd1c6f101e98a"
-			},
-			{
-				"title": "回すシンバル [SP Scratch.ver]",
-				"genre": "ローリングメタル",
-				"artist": "DJ Mawas Cymbal(CV:かゆき) / obj: sara",
-				"md5": "94a4e9aeb457b5c8c714d14b2a618f9b",
-				"sha256": "b2b0ce606991877a4d1e854a777ea7d4d432858120932f14498c90cb13ac41d7",
-				"content": 3,
-				"charthash": "0e757ce8ce89c07c42913d988e7110443f4a1e08dc00a02545a57164c0d9d2e8"
-			},
-			{
-				"title": "reikon girl@Genso-kyo (HYPER7)",
-				"genre": "TECH-BREAKBEATS",
-				"artist": "ZUN(Arr.sun3)",
-				"md5": "5cb08ee8f6a44e56f274897765ea89a1",
-				"sha256": "e0d4ac04ab7cebb00eb23228e45b9278be50cfe7e336baf0b7adcf0d8766da42",
-				"charthash": "ade6f106a6372a76f2c7741ab7e8953b22945fab9b5666523603719b58e0acdb"
-			},
-			{
-				"title": "Wonder Bullfighter～A Barcelona cuando florece la lira～[7key_KASATHER◎]",
-				"genre": "Latin House",
-				"artist": "naotyu- feat. R.Yago obj:KASAKO",
-				"md5": "36734a52f3e052a4bc0f744c4e282952",
-				"sha256": "bc9d052c342e13248e1d9436023e68a10546af881a651bb36b371405752a9930",
-				"content": 3,
-				"stagefile": "titleimage.bmp",
-				"banner": "banner.png",
-				"charthash": "adcd8d258f1ef2bddb2d9d016de3311f56e9d854da6306dc8092092e89d72004"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 一級",
-		"hash": [
-			{
-				"title": "LOVE☆BEAM (orange summer mix) -NAGTHER+ 皿-",
-				"genre": "H.H.P",
-				"artist": "honey princess/差分：水橋なぐさ",
-				"md5": "2c1fd9cd9912db67f15785ad86ee43e1",
-				"sha256": "1feaf33f2df0476b7ce5e1a57c17e2ce768c9f2766c682c0745462146b4f5557",
-				"content": 3,
-				"charthash": "06aa306594357043fb39af60835ad223848e42fc11a8eac79474202edf35bc7e"
-			},
-			{
-				"title": "特効薬はカニピラフ (カニカマ)",
-				"genre": "Crab Music",
-				"artist": "セナ/obj.ZENSOQ",
-				"subartist": "BGA：Milk_tya Illust：神奈川わか奈",
-				"md5": "fb4de222e2abea567651a3e2e1ae3ce1",
-				"sha256": "2799c20e2a3d331137c8653d8b58dfa91226dfbe9ee2802fa3cbe50162999282",
-				"content": 3,
-				"charthash": "267357aa4758622ca40092ed8437360db171d9fdb2ea5248f3fdc8ee9b0bc073"
-			},
-			{
-				"title": "S oz S",
-				"subtitle": "[ANOTHER]",
-				"genre": "HIP HOP",
-				"artist": "ETIA. vs MM Sequence",
-				"md5": "2290a0f15dd0387806b03417338fa741",
-				"sha256": "1631ec037b272a301dd42ccf8c0b98f51f4f0abfffe31bd1832986e1ee78a822",
-				"content": 3,
-				"stagefile": "title.jpg",
-				"charthash": "4974c5197b6e451c46bde8a78e413a1bd4165ab0ee5087cfaa292d9aebf252af"
-			},
-			{
-				"title": "Maharaja Trance -Full Mahara Jacket-",
-				"genre": "HYPER TECHNO",
-				"artist": "Queen P.A.L. / obj:Ark-Z",
-				"md5": "41b6863d6b6d218c335d0d8ea62f1033",
-				"sha256": "4c1acd6cb7c54f7e66906ffa8d5bc202f1d9f847b2ac2c4ace8a097aa7d46a73",
-				"content": 3,
-				"charthash": "3f934e938cf2ea7500ed241ae0f41f7b934f2d149141023cc07e8e30defe0eb6"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 初段",
-		"hash": [
-			{
-				"title": "Meteor Lights [SP Scratch.ver]",
-				"genre": "Last Day",
-				"artist": "s-don / kkkfff2 / obj: sara",
-				"subartist": "hi-low",
-				"md5": "e4ce0e7b32dcf2be5cbab112da3edf75",
-				"sha256": "dac0e8f856d5892646c9fa8596a36a04f95a6e6fb352bbe8a0884df033a32d13",
-				"content": 3,
-				"stagefile": "title.png",
-				"charthash": "98b9790f2ed08c4799ea33b618df73d7173dec34aefecbc88ea76837741ce41b"
-			},
-			{
-				"title": "Nigrette",
-				"subtitle": "-SCanother-",
-				"genre": "POST DUV",
-				"artist": "角煮ブラックラグーン / エターナルコスモ斎藤 / La*2℃",
-				"md5": "714461caefdead80e1222335a1f62db3",
-				"sha256": "2d32080a1d6dbd4bb94f29e1ae1ca58fe26c2a300a6bfe1981ea8c6fdf5745ff",
-				"content": 3,
-				"charthash": "cc8eb16689fe003f288a6b98f5ba315987429c452c709ad7b9c1992751b05235"
-			},
-			{
-				"title": "日立の樹-この皿なんの皿-",
-				"genre": "dish song",
-				"artist": "G-Y / obj:クルルwithKJ",
-				"md5": "da501cc53023d990f9cb1566fdfa8c15",
-				"sha256": "a52f029e45193814a8b521ecd3f96409a6ec2d1fffbe7349f0f99632fd76e8c8",
-				"content": 3,
-				"charthash": "5959bb864e1a81377ae1829926e0e7195470cc73b10f77692c0e8027b48164da"
-			},
-			{
-				"title": "<('ヮ')>",
-				"genre": "Ascii Art Break",
-				"artist": "Yamajet",
-				"subartist": "BGA: sta",
-				"md5": "52c60cf7e8bbb32ed46e9e199546b510",
-				"sha256": "13f5c39fa9c77d9ff5e317939d20b92c4558fb55fcb43e239686c973c09a35dc",
-				"content": 3,
-				"stagefile": "stage_01.bmp",
-				"banner": "_banner.bmp",
-				"charthash": "8620f7b17c04b2fa84fbd086f288aa761df525502b6127f3dc924c32d3e63504"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 二段",
-		"hash": [
-			{
-				"title": "SMALL BEN [7KEY KASATHER◎]",
-				"genre": "GOLDEN SHOWER",
-				"artist": "kireji obj:KASAKO",
-				"md5": "f946889a19787e7e9d405dc17d3e1c1f",
-				"sha256": "f129679b9362e2cb14e5a9b0700a71f405acf22682ba1e3c889524664694084a",
-				"content": 3,
-				"charthash": "1779ac430e6a05b3c25f3959d0d385dc1fda05a2c1273ffaf88be73282167d68"
-			},
-			{
-				"title": "GO BACK 2 RAVE [SP Scratch.ver]",
-				"genre": "TECH DANCE",
-				"artist": "DOT96 / obj: sara",
-				"md5": "f390abb6b59b72bba9c7dba752cabc12",
-				"sha256": "f5ee156cdad2d495444f222aa2786a8c548a4049746fa2954647e0a49e37dd58",
-				"content": 3,
-				"charthash": "31baf9c685a1f156f172ba94b47fd2ecb74da343fa917f6ba950ff0dbf1776e6"
-			},
-			{
-				"title": "Karakuri Plum _SCR ver",
-				"genre": "RISING SPEEDCORE",
-				"artist": "Mitsu☆ / modified to MIND",
-				"md5": "eebd547affb449235039090819de4e0f",
-				"sha256": "df1b79ab6cc94951bb5580b5ed86e078931b714fdf2cb62a8f85a5bd7c2bef28",
-				"content": 1,
-				"charthash": "3dc851f8233a64efd80ee993cefd0d66e53b56f89654ac66cd3b852d14109310"
-			},
-			{
-				"title": "Luminance [SP Scratch.ver]",
-				"genre": "UK HARDCORE",
-				"artist": "Cocoa / obj: sara",
-				"md5": "289de1af0f13830112203eb76410a4d6",
-				"sha256": "32155f0f0890820514a537c8aa0de3f4304948825d48778f5e9817554aa4e73b",
-				"content": 3,
-				"charthash": "3f32429b7165b1c8271c7084ce46b78d2abcca002af774534b457f510d63045e"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 三段",
-		"hash": [
-			{
-				"title": "BIAS [あかい]",
-				"genre": "Crossbreed",
-				"artist": "syzfonics　obj:alt",
-				"md5": "d604130c9a409cde9827500d8534b967",
-				"sha256": "795b92c76f2670945c5f615afa0365a2180b52ca5dc4446fbdba08035bc96b1a",
-				"content": 3,
-				"stagefile": "_a.bmp",
-				"charthash": "6678dde6b9cae16c408d684fe8a5cd1027bd7b326ad5886bd9afc8c65a3544f6"
-			},
-			{
-				"title": "It's \"alice\" dream[7key_KASATHER◎]",
-				"genre": "HARDCORE",
-				"artist": "polysha",
-				"md5": "2e4fbaa3f9968ca6cd5239049520ad1b",
-				"sha256": "0337b9d41e4f43feb66a804e58d46b6b9f2a823879458d70eb63636201d907d6",
-				"content": 3,
-				"stagefile": "bgi.bmp",
-				"charthash": "c2884f37d955f871559079fc1c17c07671f135d1a17b8805c6f8b53df9714ccb"
-			},
-			{
-				"title": "At Aqualand [SP Scratch.ver]",
-				"genre": "Aquatic Gamers II",
-				"artist": "AsAhisAn / obj: sara",
-				"subartist": "movie:zue-row",
-				"md5": "d11d6bcf5d208fedb19843f3d0cfc02b",
-				"sha256": "2ba8bb45bad02822e4b8f2f01eb14097081c341d4d876a46e774ebf7c192fca2",
-				"content": 3,
-				"charthash": "3402610cc22c0240f139c0894b5b63059f7d74834ba99443fe0c57212b1be940"
-			},
-			{
-				"title": "locked girl@Scarlet-Devils Palace [ANOTHER]",
-				"genre": "TECH-BREAKBEATS",
-				"artist": "くっちー",
-				"md5": "ed40d68d31873d52dd87cd1cf7896113",
-				"sha256": "be6c73e9d15a28cf9eec0dc4ce4774ffb0f2e6fd37e8ce6f22586448da6a8c1b",
-				"content": 3,
-				"charthash": "3677e6a1685fb1cc0355ea8448297fb6582b9d571576e9d5f898c501355d2af9"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 四段",
-		"hash": [
-			{
-				"title": "Reach to the sky (radio edit)  [SP Scratch.ver]",
-				"genre": "UK Hardcore",
-				"artist": "void feat. Salita / obj: sara",
-				"subartist": "Momomi Aoyama",
-				"md5": "a16d63ac359d357f1ad0feb85ff0b89f",
-				"sha256": "c2383fb429549fa9624ebb52606afc16b91cd70385d6a1b014bf96d0b0093fa8",
-				"content": 3,
-				"charthash": "aa484f83d3d32350cdc5a7337840173bd11a90acba5be486896a09cf72f84dfc"
-			},
-			{
-				"title": "年中夢中な好奇心[scr_another]",
-				"genre": "やるきファンク",
-				"artist": "er / obj:jin",
-				"md5": "937b20699bb0df1b236c2fb77c95587f",
-				"sha256": "f7d7f761a522317d26a54e09a17a5d5c4c2c2007fd741d7b8539bb7b890f54c7",
-				"content": 3,
-				"charthash": "cb38fc3f3a4cce149bb7f7c58416c3e408fd3a8c55de97e884aaf17af9b67d4a"
-			},
-			{
-				"title": "The Question [7key KASATHER◎]",
-				"genre": "NU DANCE",
-				"artist": "Personative feat. MC. NOREAJ obj:KASAKO",
-				"subartist": "BGA : Photonskyto",
-				"md5": "68dd0f1a8f598f1496936c2c74446467",
-				"sha256": "a14bdfe3e82b8a58acae3f2244d6b485acc05f6ea9ccd9926aa6edc922a4e0ab",
-				"content": 3,
-				"stagefile": "title.bmp",
-				"banner": "banner.bmp",
-				"charthash": "f187199c5b5f572de4212396d34d5a67359dbca12daa248d91d50c1a336530c6"
-			},
-			{
-				"title": "Espresso Shots [Another+]",
-				"genre": "TECH-BREAKBEATS",
-				"artist": "Chino",
-				"md5": "6ac4a7d3a047e307ce12272d4f6a7751",
-				"sha256": "085e630649d5e35582b1386cccd35f6572e054bbb86678428b67102507c2dde6",
-				"content": 3,
-				"charthash": "7a6056bfe1e18a95009785ab38964c5c1a1b18c1a376139a0173deb33f1ce763"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 五段",
-		"hash": [
-			{
-				"title": "再入浴タイムズ",
-				"subtitle": "[SP Scratch.ver]",
-				"genre": "バラトラ(バラ風呂トランス)",
-				"artist": "バスロマンス～バラの香り～",
-				"subartist": "obj:GEIST / obj: sara",
-				"md5": "38489aa89b243feecb0b007f4dfa1c69",
-				"sha256": "334267e36e8bc2187667c0a24f6c73d3e2559435461f4fb0ec53ea7c8c1d7472",
-				"content": 3,
-				"stagefile": "title.png",
-				"charthash": "1e15d012943efcd84d28b47fe28aa92ed1055fc03e79f293acc21fdbafec3a10"
-			},
-			{
-				"title": "Lieselotte",
-				"subtitle": "[lunether]",
-				"genre": "Gothic Lolita Memoir",
-				"artist": "wa. / deadblue238/ obj.lune",
-				"md5": "d312e5f3b5a3f1211b96f764a0e3ac91",
-				"sha256": "c8846cc4c7f5b8714f91057a6943b837bdfb18e52a02047ca71eb03bb3c3554f",
-				"content": 3,
-				"stagefile": "_title.png",
-				"charthash": "2271da705df716b04b720fbc781f937dbb4d0f0f6f9d98d3226017cc9aa033b4"
-			},
-			{
-				"title": "モリオンの姫 [yumether◎]",
-				"genre": "IntelligenceTerror",
-				"artist": "wa. / obj:夢瑠",
-				"md5": "cda3343fd00d31998b74fe74f664b941",
-				"sha256": "6e659a732426c3584ec39210ee2ee46c1dc541852f3444d2ea0db5031dbac9c6",
-				"content": 3,
-				"stagefile": "_morion_title.jpg",
-				"charthash": "742154fa9182ccb023249bcd7e0ed010d76f301a55a5e4d396d21e664690cdfd"
-			},
-			{
-				"title": "Cherry Blossom Shower -SP For Scratch 伍分咲-",
-				"genre": "SPEED DANCE",
-				"artist": "Belle. /obj：彩雛",
-				"md5": "ed4068be79d17221c1ee74fe44fbd1fe",
-				"sha256": "dcc144a15aa1a7d5f3fcdbe37e44757845ec2a74683bddc6fcb0d8a89cc97e47",
-				"content": 3,
-				"stagefile": "title.jpg",
-				"charthash": "b96a45decb68c38ac12e596b009968f6db9a5b26d1d17ce011a99bbcacc4aeec"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 六段",
-		"hash": [
-			{
-				"title": "Koishi ～Closed EyEs [SCRACH]",
-				"genre": "DANCE SPEED",
-				"artist": "ZUN Remixed by くっちー /obj：彩雛",
-				"subartist": "Illust:きさ",
-				"md5": "888333edc187e10c3052421f9e8fd103",
-				"sha256": "35f1e5751e1627c9705b749cf7e4eaacfcc36aebcbb1f43adcf75125d8cf5152",
-				"content": 3,
-				"stagefile": "taitoru4.jpg",
-				"charthash": "c95c9659e7162fc3a6b59d58e76ed91441b4caa470632f9d29106a8e8a0bd856"
-			},
-			{
-				"title": "水晶世界 ～Fracture～ [yumether◎]",
-				"genre": "hard nrg",
-				"artist": "秋山 澪 / obj:夢瑠",
-				"md5": "d047727ac1e04f53c2611a7383123403",
-				"sha256": "c14a1b0df5d98ede2ebbe03d99b469ee7eaae1b98e48df5aff47855e6da09253",
-				"content": 3,
-				"stagefile": "_crystal-world_r_title_h.png",
-				"backbmp": "_crystal-world_r_backbmp.png",
-				"charthash": "4765bd83a7398e170ea919f505b48609051de2ae94cf3a2b4a376bb1d4ef2a2c"
-			},
-			{
-				"title": "Gun to Childhead",
-				"genre": "HARDCORE(SCR PARADICE)",
-				"artist": "eicateve / Mentalstock/obj:uet",
-				"md5": "b3125dad9faddd06386110933be53143",
-				"sha256": "44049dccca6ff794996b4fbba7ffdda228c9ad264381d788e500fbb31dbc51f1",
-				"content": 3,
-				"stagefile": "6+9-gun_to_childhead_title.bmp",
-				"charthash": "02f51e07ab78ef02ecf5803fc43cf069e7e4a473897209a9a257e9c24b79550e"
-			},
-			{
-				"title": "<('ヮ')>",
-				"subtitle": "灼熱のカーニバル",
-				"genre": "Ascii Art Break",
-				"artist": "Yamajet",
-				"subartist": "BGA: sta",
-				"md5": "11ca0610aeb3b564ea77d95959ac6888",
-				"sha256": "c902e5203a81ffba3e52e09c7f22a5fd2e242aee15d2fbc735c685de21127bdd",
-				"content": 3,
-				"stagefile": "stage_01.bmp",
-				"banner": "_banner.bmp",
-				"charthash": "e4cb98d3374e9d578b9d6d5dbabce98648421d5f908b711f1b4903546af4bcf1"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 七段",
-		"hash": [
-			{
-				"title": "Bicolor spirit[◎NANATHER]",
-				"genre": "HARD TRANCE",
-				"artist": "urimu / 奈那樹",
-				"subartist": "Movie:RAIDEN",
-				"md5": "56dbebc0002f45164112679266a08895",
-				"sha256": "b56d84a7d3f32bc01e10d08663eb05dae88371b01b3c910c221686651a909c8e",
-				"content": 3,
-				"charthash": "735980262031d4ef63a2b25d7a40c96e261bdc110eaec4a93cfe57ad3bb5cf72"
-			},
-			{
-				"title": "Mr.Burning Prince[◎]",
-				"genre": "BUCHIAGE TRANCE",
-				"artist": "xenothium / 奈那樹",
-				"md5": "6bd2f03d509e62e20a3d301771b0de88",
-				"sha256": "584950dc2965a45b9f2de08bb4c443b54e960ddaeefa54a70313a84c6b2a3bca",
-				"content": 3,
-				"backbmp": "load.png",
-				"charthash": "091bf53b2a8f2a3ca91cd57811a8c1a53dce1e51c42e9e2d9f34f2dcf9d15822"
-			},
-			{
-				"title": "Singing of Night birds [◎NANATHER]",
-				"genre": "Hard Mystic",
-				"artist": "Ark-Z  Illustration by 春雨 / 奈那樹",
-				"md5": "766ca3606583ca51ee87a97389a8700a",
-				"sha256": "e1e094946d365897243dcb216b7237552ff1aaeb85b75641b004cf7932eba758",
-				"content": 3,
-				"charthash": "e033075286c09d44239d7c7664a835d6fe77a1bdca56e6cff36caee53469e12f"
-			},
-			{
-				"title": "Lang Tone",
-				"genre": "BUCKLER[SP ヤバい！]",
-				"artist": "ルゼ / obj:夢瑠",
-				"md5": "78a9cdaf70047109cd4681fce9f1e1fc",
-				"sha256": "defc020c25c376184b163451c8b3b16ffb318a6abd42d997f28b8a59f682a83d",
-				"content": 1,
-				"charthash": "68807705a62e39cfe136fe5365e962ea0d02f7b12bd5606589903c6dcb852c82"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 八段",
-		"hash": [
-			{
-				"title": "Here we go！(TM edit)[KASATHER◎]",
-				"genre": "マイアミベース",
-				"artist": "Awesomeman / obj:KASAKO",
-				"md5": "d05a25b1cca3f83ad10894f89303012d",
-				"sha256": "fe48eb149eaca73025cacd1da3287e321f27f8768583036fa08b1b51bff11adc",
-				"content": 3,
-				"backbmp": "herewego_bg.png",
-				"banner": "herewego_banner.png",
-				"charthash": "998a1a6a5d87c79e985507d99bc07ca710b260221ade78755612b17fc4e7a53c"
-			},
-			{
-				"title": "Cowardly Clime [yumether◎]",
-				"genre": "NRG/Freeform",
-				"artist": "rider / obj:夢瑠",
-				"md5": "f346c17c76b5a5b3457d33cc462a9925",
-				"sha256": "b7ef5db934814af9933ed72b2c43d17c75f2f3269a88572cb85cbe7f0dd462bd",
-				"content": 3,
-				"stagefile": "1.jpg",
-				"charthash": "56b4599c16b2f5847fd4561b47543d0872ca32aa752807cc8308a55e8c729ad2"
-			},
-			{
-				"title": "God In Love -Hardcore remix-(ポロロロロロロロロッカ)",
-				"genre": "Trance",
-				"artist": "ZUN(Arr.sun3) / 奈那樹",
-				"md5": "93059fe84d521fb5885122f82e384ddd",
-				"sha256": "4812dbadd2ad9d73ac5b8860cc16828bfd5195ee4485c713a75fdb2fbe03a909",
-				"content": 1,
-				"charthash": "e1650cf3212d3369bafa66ae0f7ed86e5abe87098cb7d068df414575ba66f726"
-			},
-			{
-				"title": "VALLISTA [yumether◎]",
-				"genre": "Overture / IDM",
-				"artist": "削除 / Mentalstock / obj:夢瑠",
-				"md5": "189b677f1d3c310243d4586388e21497",
-				"sha256": "fd59b3b0896c4673a0cea778e48b8ba4097d8220fd067b7dbcf28b9825ac705d",
-				"content": 3,
-				"charthash": "c4fae19aaa900d2e6743319f72f0ace92f22edb72ea6e7e57b3f8eb83b336c60"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 九段",
-		"hash": [
-			{
-				"title": "clutch[皿ANOTHER]",
-				"genre": "ギアブレイクス",
-				"artist": "ルゼ /差分 赤い人",
-				"md5": "169dc9f915a9e43b8488a20e2fb6df51",
-				"sha256": "931880c83792bf722aee88ceda11086a48c14bd32f8c2e4fc02830a4a258bbfe",
-				"content": 1,
-				"stagefile": "title.png",
-				"backbmp": "title.png",
-				"banner": "banner.png",
-				"charthash": "d3ae3082c7e1900646ca2e1ea36aff2c3af60662b7bda7ea306f7384a3010454"
-			},
-			{
-				"title": "Cross Galaxy[boiled fish◎cosmic‐paste]",
-				"genre": "ENERGETIC TRANCE",
-				"artist": "kanone/obj.ZEN-SOQ",
-				"subartist": "mov:deadblue238",
-				"md5": "0dac32ca8ba27e6f66146e1054e43674",
-				"sha256": "b7dc21851d4673c0f8272afd6ff779a83b6c3f6a1f4c3b81792c94d6b1a29403",
-				"content": 3,
-				"stagefile": "title_ver1.png",
-				"charthash": "b2d01d5f11d389dd438558eb02a8faa36e38e7f16ad6d75eab0015f7ba9d85cf"
-			},
-			{
-				"title": "End Time A⇒Side[MD]",
-				"genre": "ReQuiEm tRanCe",
-				"artist": "Cres / *8284* / 奈那樹",
-				"md5": "336b6155717ce1841028482f6470d4df",
-				"sha256": "b4479a79b115ed691d46ae9447e3e3696edbe96f9c233b52e8b5e443507542c9",
-				"content": 3,
-				"charthash": "95ede0aeeedc68a9237978856bb670901bd8cd61d8c202cd84a0d415c4cfb12f"
-			},
-			{
-				"title": "ワルツ第4番ロ短調-皿狼のワルツ-",
-				"genre": "SALSE",
-				"artist": "nmk / Cepokato=Ilishaninov / obj：手遅兄弟[皿]",
-				"md5": "180d8babdfd3ef6f0066d27ab09b92b3",
-				"sha256": "05f1524ff1c2e6a89eaf8866335a575b274e895ad489f351b7a094c32beacb01",
-				"content": 3,
-				"stagefile": "momi_t.jpg",
-				"backbmp": "stage.jpg",
-				"charthash": "47c228692582df2898e9938886223613674f07a2d1dd30866428d0f2b3d96af2"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 十段",
-		"hash": [
-			{
-				"title": "Altale[皿先輩]",
-				"genre": "fantasy",
-				"artist": "削除/object：と？",
-				"md5": "e2d6ef694fcf6caffd6d436e8fd4a38c",
-				"sha256": "4d46d7061af0a17ab496e9a9fa25dfb0fcd350436608ed0e7126dbf83b68810d",
-				"content": 3,
-				"stagefile": "title.png",
-				"charthash": "f0e8ba242a0f8ee4a60cd94b320fdaead890fb0507e4735609ab6bbb99101fef"
-			},
-			{
-				"title": "ダイナモと白昼夢",
-				"subtitle": "(ANOTHER MIX) [SP Scratch.ver]",
-				"genre": "MIXTURE MIX",
-				"artist": "kju8 + zen + DOT96 / obj: sara",
-				"subartist": "MOVIE / Psyche Rhodes",
-				"md5": "f818fb0fbf819b395877ea7566eda5ac",
-				"sha256": "c83500a0961dcb376e61914158fccb75862e3c866f6cb25eac81bbf3823afbbc",
-				"content": 3,
-				"charthash": "49ca636e5c08a5cab4f01c3dec8e785ea6b00b9dd1823650205ea28dcef8a724"
-			},
-			{
-				"title": "ＤＱⅢ　Battle -Scratch-",
-				"genre": "Game Music",
-				"artist": "あやめ♪ obj:バラモスゾンビ",
-				"md5": "41418f90b426431c94754098e74e2c0a",
-				"sha256": "3717b4cc87faa32020359aafb6f96b5b238b4e08cbf5fea21f38fcd0814c1e58",
-				"content": 1,
-				"charthash": "69b107ff2e7f60dfb4043adcefbe030f2ccd0ab670e6fc5cf7cf37800f176f29"
-			},
-			{
-				"title": "Lambda Driver [boiled Λfish paste Driver]",
-				"genre": "HARD DANCE",
-				"artist": "SPELL BREAK/HEART BREAK/obj.ZEN-SOQ",
-				"md5": "ce2f0b5d9752ece78bef80c2506bf871",
-				"sha256": "7a1a32e2dbeb82bdcbb6df65a08237672884ceee8c73ad822397ba0d6031cfb4",
-				"content": 3,
-				"charthash": "5ebc6f421871cacab6359403108fb6f6178e7bca7d0555c5ec95a60809e4801d"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	},
-	{
-		"class": "bms.player.beatoraja.CourseData",
-		"name": "皿段位認定2 皆伝",
-		"hash": [
-			{
-				"title": "F13 [SP Scratch.ver]",
-				"genre": "BETRAYAL",
-				"artist": "Judah / obj: sara",
-				"subartist": "BGA:Lucifer",
-				"md5": "89b6c441fd021c872c63453c3041d7a9",
-				"sha256": "7b21fb3535e686a6e5b3d7277797d87d0f7cc2c076625de9016ebcd883dd2869",
-				"content": 3,
-				"stagefile": "stagefile.png",
-				"backbmp": "title.png",
-				"banner": "banner.png",
-				"charthash": "cd2f32a82f80dc3d6a650fd0be5716e69da49bfda302ad7561d3690a8ed3ec37"
-			},
-			{
-				"title": "DISCHARGE RUSH",
-				"subtitle": "[S_EASY]",
-				"genre": "SARATTERDAM TECHNO",
-				"artist": "ETIA. vs MM Sequence / UnK-now vs 37E",
-				"md5": "1a89ba0ab527113fc3d00d63870a69a4",
-				"sha256": "307caae40511ab6a630606a5c5e331738a6143f7cc9dd408e0cfedc9056b1afc",
-				"content": 3,
-				"charthash": "fb7f775dc2a9d8642048d32d7e386f41f7404123615ca5f14ce3e9ed293a8fca"
-			},
-			{
-				"title": "スクラッチマニア！このこゆびおれろ！[WriStCUttEr]",
-				"genre": "HOTTEST TUNE",
-				"artist": "常夏ハニーパイ/obj.ZEN-SOQ",
-				"md5": "7a80295d155c62c11858d0d586d20f3b",
-				"sha256": "4ee4ae12460ddec17fb2561dc2ea7bdab92741ec7f57671321056375860274ab",
-				"content": 3,
-				"stagefile": "stage.bmp",
-				"charthash": "2c4b9213f5e96d029f4acf4a1f21110575d946919487f81779e00b5270303703"
-			},
-			{
-				"title": "必然死の運命論",
-				"genre": "CONDUCTOR[皿]",
-				"artist": "ルゼ ☆ えみゅう。 ☆ 石王マサト/object：と？",
-				"md5": "f11050396cb3fd3156d4804edeece18a",
-				"sha256": "cdbc9e807a0e2c8041f66660b6393026aa1ae840e36adef5398f068f4dfebb7c",
-				"content": 3,
-				"stagefile": "unmei_bg.png",
-				"backbmp": "unmei_bk.bmp",
-				"banner": "unmei_bn_a.bmp",
-				"charthash": "c31f6b27a639c41f4f48e3604251f675959077a7dcf201a2626da7633788c0dc"
-			}
-		],
-		"constraint": [
-			"MIRROR",
-			"GAUGE_LR2",
-			"LN"
-		],
-		"trophy": [
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "bronzemedal",
-				"missrate": 7.5,
-				"scorerate": 55
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "silvermedal",
-				"missrate": 5,
-				"scorerate": 70
-			},
-			{
-				"class": "bms.player.beatoraja.CourseData$TrophyData",
-				"name": "goldmedal",
-				"missrate": 2.5,
-				"scorerate": 85
-			}
-		],
-		"release": false
-	}
-]
+		]
+	]
 }
