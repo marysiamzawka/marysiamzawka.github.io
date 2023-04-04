@@ -1,4 +1,242 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-03T13:58:31+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr. Mary’s Ramblings</title><subtitle>I wrote this thing only to not clog up others&apos; Twitter feed with my stuff (I ain&apos;t no Foone)</subtitle><entry><title type="html">W-reMIX Result - a classic skin rewritten for beatoraja</title><link href="http://localhost:4000/2023/03/03/wremix.html" rel="alternate" type="text/html" title="W-reMIX Result - a classic skin rewritten for beatoraja" /><published>2023-03-03T03:00:00+01:00</published><updated>2023-03-03T03:00:00+01:00</updated><id>http://localhost:4000/2023/03/03/wremix</id><content type="html" xml:base="http://localhost:4000/2023/03/03/wremix.html"><![CDATA[<ul id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-04T10:18:01+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr. Mary’s Ramblings</title><subtitle>I wrote this thing only to not clog up others&apos; Twitter feed with my stuff (I ain&apos;t no Foone)</subtitle><entry><title type="html">L-Tek Dance Pad Lisek Mod - getting your pad ready for Tech</title><link href="http://localhost:4000/2023/04/03/ltek-lisekmod.html" rel="alternate" type="text/html" title="L-Tek Dance Pad Lisek Mod - getting your pad ready for Tech" /><published>2023-04-03T04:00:00+02:00</published><updated>2023-04-03T04:00:00+02:00</updated><id>http://localhost:4000/2023/04/03/ltek-lisekmod</id><content type="html" xml:base="http://localhost:4000/2023/04/03/ltek-lisekmod.html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#intro" id="markdown-toc-intro">Intro</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+  <li><a href="#materials" id="markdown-toc-materials">Materials</a></li>
+  <li><a href="#steps" id="markdown-toc-steps">Steps</a>    <ul>
+      <li><a href="#0-prepare-your-working-environment" id="markdown-toc-0-prepare-your-working-environment">0. Prepare your working environment</a></li>
+      <li><a href="#1-remove-the-panels" id="markdown-toc-1-remove-the-panels">1. Remove the panels</a></li>
+      <li><a href="#2-mark-the-middle-of-the-panel-for-later" id="markdown-toc-2-mark-the-middle-of-the-panel-for-later">2. Mark the middle of the panel for later</a></li>
+      <li><a href="#3-get-rid-of-the-hot-glue" id="markdown-toc-3-get-rid-of-the-hot-glue">3. Get rid of the hot glue</a></li>
+      <li><a href="#4-remove-the-staples-holding-the-tabs-in" id="markdown-toc-4-remove-the-staples-holding-the-tabs-in">4. Remove the staples holding the tabs in</a></li>
+      <li><a href="#5-remove-the-bottom-plate" id="markdown-toc-5-remove-the-bottom-plate">5. Remove the bottom plate</a></li>
+      <li><a href="#6-test-fit-the-plates-and-cut-the-wires-if-necessary" id="markdown-toc-6-test-fit-the-plates-and-cut-the-wires-if-necessary">6. Test fit the plates and cut the wires if necessary</a></li>
+      <li><a href="#7-solder-the-extension-wire" id="markdown-toc-7-solder-the-extension-wire">7. Solder the extension wire</a></li>
+      <li><a href="#8-reseat-the-bottom-plate" id="markdown-toc-8-reseat-the-bottom-plate">8. Reseat the bottom plate</a></li>
+      <li><a href="#optional-add-copper-tape" id="markdown-toc-optional-add-copper-tape">(Optional) Add copper tape</a></li>
+      <li><a href="#9-secure-the-newly-installed-cables" id="markdown-toc-9-secure-the-newly-installed-cables">9. Secure the newly installed cables</a></li>
+      <li><a href="#10-reassemble-the-panel" id="markdown-toc-10-reassemble-the-panel">10. Reassemble the panel</a></li>
+    </ul>
+  </li>
+  <li><a href="#additional-notes" id="markdown-toc-additional-notes">Additional notes</a></li>
+  <li><a href="#acknowledgements" id="markdown-toc-acknowledgements">Acknowledgements</a></li>
+</ul>
+
+<h1 id="intro">Intro</h1>
+
+<p>I assume you all are well acquainted with the L-Tek Dance Pads (aka Polish Pads) by now. And so is Lisek - head of the Lisia Nora (tl - Foxy Den) community, who’s been in the game since 2006 or so.</p>
+
+<p>In 2010 he bought the Pad, but he wasn’t satisfied with its bracketing ability, so he sent the pad back in order to get something done about it. A couple things were done to it, like a PVC foam square being added on top of the sensor (a standard issue now), but what actually made a difference was something very simple - <strong>turning the entire sensor by 45 degrees</strong>.</p>
+
+<p>This turned out to have significantly improved to ability to hit a bracket with the pad, as the actuation point was placed closer to the corners of the panels - by default the corners is where the velcro joining the two metal pieces are placed. Even the edge sensitivity gained a bit, as the active corners of the sensor were placed closer to the edge.</p>
+
+<p><img src="/assets/lisekmod/lisekmod_og.png" alt="Lisek mod as seen in Lisek's pad" /></p>
+
+<p>(<em>All the foam is placed to help dampen the acryllic panel and isn’t related to the mod itself</em>)</p>
+
+<p>But why didn’t we get this in modern pads? This could be because at that time it didn’t really bring any profit to a casual player - Tech charts wouldn’t become popular in Cabinet-less parts of the world until the 2020s, and with Poland itself lagging behind (it’s 2023 and only now we are considering dropping ITG1/2 charts from the tournament pools), the mod fell into obscurity. The US community came up with its own spin on the sensitivity increasing mod by doing what Americans do best - throw money at stuff until it becomes better (the Pennymod).</p>
+
+<p>But today with the International Timing League tournament many L-Tek mains (including myself) feel excluded from serious participation as they’re held back by their pads’ weak ability to hit brackets (you can hit a bracket only if you stomp REALLY hard), and the Lisek Mod is slowly gaining popularity as an alternative to the often-damaging pennymod (when incorrectly performed it can make the pennies dent the metal plates decreasing sensitivity over time).</p>
+
+<h1 id="disclaimer">Disclaimer</h1>
+
+<ul>
+  <li>This is not meant to be a complete guide on the modding process. I’m sure someone better suited will come up with a more robust guide in some time, and I’m only showing you the process from a simple guy’s perspective</li>
+  <li>I am not to be held responsible for any damage you’ll do to your pad or anything else during the modding process</li>
+  <li>Following through the guide will lead to your warranty being void</li>
+  <li>This mod involves soldering - if you’re not comfortable doing it you could get away without it by just twisting the required cables together, but adding some solder in will help secure the connection (consider the fact that the cables will be shaking A LOT during gameplay)</li>
+</ul>
+
+<h1 id="materials">Materials</h1>
+
+<ul>
+  <li>An L-Tek DDR dance pad with square sensors that are roughly 17cm long
+    <ul>
+      <li>If your pad came with smaller sensors, you will have to replace them with bigger ones which you can make from scratch, but this is outside the scope of this guide</li>
+    </ul>
+  </li>
+  <li>A Philips head screwdriver
+    <ul>
+      <li>Used to unscrew the panels</li>
+    </ul>
+  </li>
+  <li>A pen or a marker
+    <ul>
+      <li>Used to mark where the bottom plate will go</li>
+    </ul>
+  </li>
+  <li>A hot air gun or a hair dryer
+    <ul>
+      <li>Used to help easen up the glue holding the metal plate in</li>
+    </ul>
+  </li>
+  <li>A flat long tool (like a flathead screwdriver)
+    <ul>
+      <li>Used to help lift the metal plate off</li>
+    </ul>
+  </li>
+  <li>Some wire
+    <ul>
+      <li>Used to extend the cables linking the control board to the sensors</li>
+      <li>I used 30AWG wire because that’s what I had on hand and it works fine, IDK what’s the spec for the cables used by L-Tek</li>
+    </ul>
+  </li>
+  <li>Wire stripper (or a nail clipper)
+    <ul>
+      <li>Used to strip wires, duh</li>
+    </ul>
+  </li>
+  <li>An adequate-sized heat shrink sleeve
+    <ul>
+      <li>Used to secure the soldered wires</li>
+    </ul>
+  </li>
+  <li>A hot glue gun or duct tape
+    <ul>
+      <li>Used to secure the cables</li>
+    </ul>
+  </li>
+  <li>Doublesided tape
+    <ul>
+      <li>Used to hold down the bottom sensor plate</li>
+    </ul>
+  </li>
+  <li>(Optional) Copper tape
+    <ul>
+      <li>Can be used to mitigate the damage done by an incorrectly-done pennymod</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="steps">Steps</h1>
+
+<h2 id="0-prepare-your-working-environment">0. Prepare your working environment</h2>
+
+<p>This is not a kind of thing that you want to be doing laid down on the floor. Get your pad situated on a stable workbench or a table that you’ll be able to comfortably work on.</p>
+
+<h2 id="1-remove-the-panels">1. Remove the panels</h2>
+
+<p>Start off by unscrewing and removing the active panels. I also recommend removing the adjacent panel from which the wires are coming from, so that you’ll have an easier time manipulating them.</p>
+
+<p><img src="/assets/lisekmod/step1.jpg" alt="step1" /></p>
+
+<h2 id="2-mark-the-middle-of-the-panel-for-later">2. Mark the middle of the panel for later</h2>
+
+<p>Use the corners of the foam square to mark the the middles of the sides. This will help us align the bottom metal plate down the line.</p>
+
+<p><img src="/assets/lisekmod/step2.jpg" alt="step2" /></p>
+
+<h2 id="3-get-rid-of-the-hot-glue">3. Get rid of the hot glue</h2>
+
+<p>L-Tek is a fan of liberal use of the hot glue to keep the sensor elements in place - the corners and the small tabs attaching to the sensor plates.</p>
+
+<p>Use a flathead screwdriver or a similar tool to rip them off. Pay extra attention when removing glue from cables and from velcro.</p>
+
+<p><img src="/assets/lisekmod/step3.jpg" alt="step3" /></p>
+
+<h2 id="4-remove-the-staples-holding-the-tabs-in">4. Remove the staples holding the tabs in</h2>
+
+<p>The metal tabs attached to the plates are additionally secured in place by a staple. To remove them use a flathead screwdriver or another thin tool to get under the staple (or the tab itself) and slowly wiggle it out.</p>
+
+<p><img src="/assets/lisekmod/step4.jpg" alt="step4" /></p>
+
+<h2 id="5-remove-the-bottom-plate">5. Remove the bottom plate</h2>
+
+<p>With hotglue and staples gone, you should be able to deattach the top plate. The bottom plate is held down with a combination of adhesive and doublesided tape. You’ll want to work around the plate with an air blower or a hair dryer spreading the heat evenly to the whole plate. Use a flat tool to help lift the plate off. Do your best to avoid bending it in the process, as it’s very difficult to bend it back into shape (a slight arc is acceptable).</p>
+
+<p><img src="/assets/lisekmod/step5.jpg" alt="step5" /></p>
+
+<p>Depending on when was your pad made, it may be attached with different proportions of adhesive and doublesided tape.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Pad A</th>
+      <th style="text-align: center">Pad B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/lisekmod/step5a.jpg" alt="step5a" /></td>
+      <td style="text-align: center"><img src="/assets/lisekmod/step5b.jpg" alt="step5b" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="6-test-fit-the-plates-and-cut-the-wires-if-necessary">6. Test fit the plates and cut the wires if necessary</h2>
+
+<p>First check if you can get away with turning the plates while keeping the attached wires in the channels and not straining them. If not, you will have to extend the wire.</p>
+
+<p>You want to leave around 2cm of the wire. on the plate side. Use the wire stripper to strip about 1cm of shielding from both ends.</p>
+
+<p><img src="/assets/lisekmod/step6.jpg" alt="step6" /></p>
+
+<h2 id="7-solder-the-extension-wire">7. Solder the extension wire</h2>
+
+<p>First place your plates in the desired position and measure how much extra wire you will need. Prepare a piece of wire that is a bit longer than that and strip about 1cm on each end.</p>
+
+<p>Next you want to twist one end and the pad wire together (you can also form hooks with the ends and join them together).</p>
+
+<p><img src="/assets/lisekmod/step7a.jpg" alt="step7a" /></p>
+
+<p>Then get them nice and straight and tin the joint with some solder. After that put on a heat shrink sleeve and apply some heat with a heat gun or the soldering iron.</p>
+
+<p><img src="/assets/lisekmod/step7b.jpg" alt="step7b" /></p>
+
+<p>After that pull the wire through another sleeve, repeat the process for the sensor end of the wire, and put on the said sleeve.</p>
+
+<h2 id="8-reseat-the-bottom-plate">8. Reseat the bottom plate</h2>
+
+<p>Cover the bottom of the bottom plate with doublesided tape and stick it firmly onto the pad surface using the marks you left in step 2 as guides.</p>
+
+<p><img src="/assets/lisekmod/step8a.jpg" alt="step8a" /></p>
+
+<p><img src="/assets/lisekmod/step8b.jpg" alt="step8b" /></p>
+
+<h2 id="optional-add-copper-tape">(Optional) Add copper tape</h2>
+
+<p>If after sticking on the top plate you feel that the brackets aren’t consistent enough on both inner corners of the sensor, you may want to add some copper tape right here.</p>
+
+<p>I had to use the copper tape, because in the past I’ve incorrectly pennymodded the pad causing the pennies to dent into the sensor place, which resulted in decreased sensitivity.</p>
+
+<p><img src="/assets/lisekmod/copper.jpg" alt="copper" /></p>
+
+<p>Add as many layers of copper tape as you think is needed. Personally I was aiming for actuation after pushing down the corner piece by placing my whole fingertip on the foam corner (not just the tippity tip).</p>
+
+<h2 id="9-secure-the-newly-installed-cables">9. Secure the newly installed cables</h2>
+
+<p>I used duct tape because I didn’t have a hotglue gun at hand.</p>
+
+<h2 id="10-reassemble-the-panel">10. Reassemble the panel</h2>
+
+<p>Screw the panels back on. Keep in mind that the center of the edges will stick out a bit due to how the sensor is placed currently, but the same thing happens with a pennymod.</p>
+
+<p>Congrats, now you have a Polish Pad modded with Polish methods!</p>
+
+<p><img src="/assets/lisekmod/step9.jpg" alt="step9" /></p>
+
+<p><img src="/assets/lisekmod/finish1.jpg" alt="finish1" /></p>
+
+<p><img src="/assets/lisekmod/finish2.jpg" alt="finish2" /></p>
+
+<h1 id="additional-notes">Additional notes</h1>
+
+<ul>
+  <li>You can swap steps 7 and 8 around if that’s more comfortable for you</li>
+  <li>You may want to have a computer or a laptop running an input tester nearby to check if you didn’t screw up the soldering before you put the whole thing back together. Just touch the two plates together and check if an input is registered</li>
+  <li>The clean acryllic panels aren’t premade. I went to a local polycarb fab and asked for 277mm square shaped 3mm polycarb panels and drilled the holes myself with a 5mm bit and using the old panels as guides (you can save a lot of money that way!)</li>
+  <li>If the screws don’t stay screwed anymore, you may want to try putting a toothpick into a screw hole. You want to trim the toothpick so that it doesn’t stick out of the hole.
+    <ul>
+      <li>If the toothpick didn’t help, try a match!</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="acknowledgements">Acknowledgements</h1>
+<ul>
+  <li><strong>Lisek</strong> for documenting the mod in the first place</li>
+  <li><strong>zibson</strong> and <strong>Thumbsy</strong> for confirming that the mod can be done with stock sensors and also providing some pics of the mod</li>
+  <li><strong>L-Tek</strong> for providing the ITG players with pads that while good for totally casual play, must be tinkered with in order to be competitive in 2023</li>
+</ul>]]></content><author><name></name></author></entry><entry><title type="html">W-reMIX Result - a classic skin rewritten for beatoraja</title><link href="http://localhost:4000/2023/03/03/wremix.html" rel="alternate" type="text/html" title="W-reMIX Result - a classic skin rewritten for beatoraja" /><published>2023-03-03T03:00:00+01:00</published><updated>2023-03-03T03:00:00+01:00</updated><id>http://localhost:4000/2023/03/03/wremix</id><content type="html" xml:base="http://localhost:4000/2023/03/03/wremix.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#w-remix-result" id="markdown-toc-w-remix-result">W-reMIX Result</a>    <ul>
       <li><a href="#features" id="markdown-toc-features">Features</a></li>
       <li><a href="#customization" id="markdown-toc-customization">Customization</a></li>
