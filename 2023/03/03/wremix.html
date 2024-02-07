@@ -102,38 +102,28 @@ For some time during my previous W-MIX adventures I was even using the result th
   <li><del>Implement the timing and density graphs (place them above the Stagefile or replace it outright)</del></li>
   <li>Implement IIDX-like “Next Grade” display (add stuff like AAA+)</li>
   <li>Make switching between regular and GAS gauge tickers automatic</li>
-  <li>Replace fonts with upscaled/recreated ones more similar to W-MIX originals</li>
+  <li><del>Replace fonts with upscaled/recreated ones more similar to W-MIX originals</del></li>
   <li>Upscale assets to 1080p</li>
 </ul>
 
 <h2 id="download">Download</h2>
-
 <ul>
-  <li><a href="/assets/wremix/W-reMIX RESULT 1.0.7z">v1.0</a>
-    <ul>
-      <li>Initial release</li>
-    </ul>
-  </li>
-  <li><a href="/assets/wremix/W-reMIX RESULT 1.0.1.7z">v1.0.1</a>
+  <li><a href="/assets/wremix/W-reMIX RESULT 1.0.4.7z">v1.0.4</a>
     <ul>
       <li>Minor update
         <ul>
-          <li>+ Show density graph on top of the gauge graph</li>
-          <li>+ Swap colors for the misscount delta display</li>
-          <li>+ Swap the gauge ticker for a lane option ticker</li>
-          <li>Increase the width of text fields in the Song Info box</li>
-          <li>Increase the title font size</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="/assets/wremix/W-reMIX RESULT 1.0.2.7z">v1.0.2</a>
-    <ul>
-      <li>Minor update
-        <ul>
-          <li>+ Colored Fast/Slow display</li>
-          <li>+ F/S ratio bar</li>
-          <li>+ Combo Break counter</li>
+          <li>+ Replaced the bottom title and Song Data fonts with their W-MIX originals
+            <ul>
+              <li>This was made by possible thanks to a script written by ARCHVILE that has been used to convert the W-MIX fonts to the AngelCode BMFont format used by beatoraja</li>
+              <li>As a result, the two “placeholder” fonts will not be distributed with W-reMIX anymore, greatly reducing the archive size</li>
+            </ul>
+          </li>
+          <li>+ Fixed an issue where the raise sound would not play at all
+            <ul>
+              <li>Now the skin correctly points to the <code class="language-plaintext highlighter-rouge">raise.ogg</code> file in result skin’s root directory</li>
+            </ul>
+          </li>
+          <li>+ Fixed various issues related to the Gauge/Lane display under the Gauge Graph</li>
         </ul>
       </li>
     </ul>
@@ -153,6 +143,35 @@ For some time during my previous W-MIX adventures I was even using the result th
       </li>
     </ul>
   </li>
+  <li><a href="/assets/wremix/W-reMIX RESULT 1.0.2.7z">v1.0.2</a>
+    <ul>
+      <li>Minor update
+        <ul>
+          <li>+ Colored Fast/Slow display</li>
+          <li>+ F/S ratio bar</li>
+          <li>+ Combo Break counter</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="/assets/wremix/W-reMIX RESULT 1.0.1.7z">v1.0.1</a>
+    <ul>
+      <li>Minor update
+        <ul>
+          <li>+ Show density graph on top of the gauge graph</li>
+          <li>+ Swap colors for the misscount delta display</li>
+          <li>+ Swap the gauge ticker for a lane option ticker</li>
+          <li>Increase the width of text fields in the Song Info box</li>
+          <li>Increase the title font size</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="/assets/wremix/W-reMIX RESULT 1.0.7z">v1.0</a>
+    <ul>
+      <li>Initial release</li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="how-to-install">How to install</h2>
@@ -168,10 +187,11 @@ For some time during my previous W-MIX adventures I was even using the result th
 <h2 id="acknowledgements">Acknowledgements</h2>
 
 <ul>
-  <li>Clear lamp text textures and title font come from the TYPE-M theme by <a href="https://twitter.com/aoi_psy">Ric</a></li>
+  <li>Clear lamp text textures come from the TYPE-M theme by <a href="https://twitter.com/aoi_psy">Ric</a></li>
   <li>W-MIX is a theme originally made by <a href="https://twitter.com/wisp_13">Wisp_13</a> for Lunatic Rave 2</li>
   <li>Special thanks to five, takekun and dolby for various support</li>
   <li>Raise sound clip provided by <a href="https://twitter.com/dotphase">dotphase</a></li>
+  <li>Python script for converting <code class="language-plaintext highlighter-rouge">.lr2font</code> to BMFont-compliant <code class="language-plaintext highlighter-rouge">.font</code> files by <a href="https://twitter.com/ARCHVILE_DRS">ARCHVILE</a></li>
   <li>This project was originally commissionned by drew, and they agreed for me to share it with others</li>
 </ul>
 
