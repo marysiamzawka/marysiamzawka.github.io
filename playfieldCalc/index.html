@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Screen Scaling Calculator</title>
+    <title>IIDX LM Scaling Calculator</title>
+    <meta content="IIDX LM Scaling Calculator" property="og:title" />
+    <meta content="Bet 20 quid you're playing on a very narrow playfield" property="og:description" />
+    <meta content="https://wwwdobryrap.pl/playfieldCalc/" property="og:url" />
     <style>
         /* Set the body to fill the entire viewport */
         body, html {
@@ -67,6 +70,10 @@
             margin-top: 20px;
         }
 
+        .closest-label {
+            margin-top: 20px;
+        }
+
         /* Style for the sliders */
         input[type="range"] {
             width: 100%;
@@ -122,23 +129,20 @@
         </div>
 
         <div class="slider-container">
-            <label class="slider-label">Distance Unit: </label>
-            <select id="unitToggle" onchange="updateScaling()">
-                <option value="cm">cm</option>
-                <option value="inches">inches</option>
-            </select>
-        </div>
-
-        <div class="slider-container">
             <label class="slider-label">BMS skin playfield width:</label>
             <input type="number" id="divisorInput" value="513" oninput="debouncedUpdateScaling()">
             <div class="footnote">Measured from left edge of first lane to right edge of last lane. ModernChic and GenericTheme default to 513px</div>
         </div>
 
-        <h2>Spice Scale Factor: <span id="spiceFactor">1.000</span></h2>
+        <h2>SP Playfield width: <span id="playfieldWidth">432px</span></h2>
+
+        <h2>Scale Factor: <span id="spiceFactor">1.000</span></h2>
 
         <!-- Display Offset Value -->
         <h2>Offset Value: <span id="offsetValue">0</span></h2>
+
+       <!-- Display Closest Value Label -->
+         <h2>Closest LITONE Size: <span id="closestValue">Loading...</span></h2>
 
         <h2>simple-play-simple settings lua Code:</h2>
         <pre class="code-block" id="simplePlaySimpleCode">
@@ -149,10 +153,21 @@ t.lane.line.px = 0
 
         <h2>simple-play (old) settings lua Code:</h2>
         <pre class="code-block" id="simplePlayOldCode">
+--SP
+
 t.lane_width = { 0, 0, 0, 0, 0, 0, 0, 0 }
 t.note_width = { 0, 0, 0, 0, 0, 0, 0, 0 }
 t.lane_line_px = 0
+
+--DP
+
+t.lane_width2 = { 0, 0, 0, 0, 0, 0, 0, 0 }
+t.note_width2 = { 0, 0, 0, 0, 0, 0, 0, 0 }
+t.lane_origin_x = 1920 - t.lanes_width - t.lanes_width2 - 132
+
         </pre>
+
+
 
     </div>
 
@@ -167,7 +182,15 @@ t.lane_line_px = 0
             s: 90,
             w: 52,
             b: 40,
-            l: 2
+            l: 2,
+            space: 132
+        };
+
+        const values = {
+            AC: 432,
+            Halfwide: 513,
+            Wide: 576,
+            CS: 844
         };
 
         // Function to calculate scaling factor
@@ -195,7 +218,7 @@ t.lane_line_px = 0
             const targetSizeInches = document.getElementById("screenSizeSlider").value;
             const targetDistance = document.getElementById("distanceSlider").value;
             const referenceDistance = document.getElementById("referenceDistanceSlider").value;
-            const distanceUnit = document.getElementById("unitToggle").value;
+            const distanceUnit = `cm`;
             const divisor = parseFloat(document.getElementById("divisorInput").value); // Get the divisor value from the input
 
             // Convert distances if unit is inches
@@ -216,7 +239,6 @@ t.lane_line_px = 0
 
             const scaleFactor = calculateScaling(targetSizeInches, targetDistanceCm, referenceDistanceCm);
             const roundedScaleFactor = parseFloat(scaleFactor.toFixed(3));
-
             document.getElementById("spiceFactor").textContent = roundedScaleFactor.toFixed(3);
 
             // Calculate the offset using the user-defined divisor
@@ -237,18 +259,42 @@ t.lane_line_px = 0
 
             const noteWidths = [...laneWidths];
             const linePx = Math.ceil(notes.l * roundedScaleFactor);
+            const spacePx = Math.ceil(notes.space * roundedScaleFactor);
+            document.getElementById("playfieldWidth").textContent = laneWidths.reduce((acc, current) => acc + current, 0) + (linePx * 7) + `px`;
 
             // Display the simple-play-simple code block with calculated values
             document.getElementById("simplePlaySimpleCode").textContent = 
                 `t.lane.lane.w = {{ ${laneWidths.join(", ")} }}\n` +
                 `t.lane.notes.w = {{ ${noteWidths.join(", ")} }}\n` +
-                `t.lane.line.px = ${linePx}`;
+                `t.lane.line.px = ${linePx}\n\n` + 
+                `-- DP line 59\n\n` +
+                `local x = ${Math.round(spacePx / 2)}`;
 
             // Display the simple-play-old code block with calculated values
             document.getElementById("simplePlayOldCode").textContent =
+                `-- SP\n\n` +
                 `t.lane_width = { ${laneWidths.join(", ")} }\n` +
                 `t.note_width = { ${noteWidths.join(", ")} }\n` +
-                `t.lane_line_px = ${linePx}`;
+                `t.lane_line_px = ${linePx}\n\n-- Also required for DP\n\n` + 
+                `t.lane_width2 = { ${laneWidths.join(", ")} }\n` +
+                `t.note_width2 = { ${noteWidths.join(", ")} }\n` +
+                `t.lane_origin_x = 1920 - t.lanes_width - t.lanes_width2 - ${spacePx}`;
+                        // Constants for closest value calculation
+
+        // Spice closest value calculation
+        const spiceFactor = scaleFactor * 432;
+        let closestLabel = "No match";
+        let closestValue = Number.MAX_SAFE_INTEGER;
+        for (const key in values) {
+            const diff = Math.abs(spiceFactor - values[key]);
+            if (diff < closestValue) {
+        closestLabel = key;
+        closestValue = diff;
+    }
+}
+
+        const closestText = `${closestLabel}`;
+        document.getElementById("closestValue").textContent = closestText;
         }
 
         // Initial call to update scaling
