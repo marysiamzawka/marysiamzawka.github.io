@@ -264,21 +264,21 @@ t.lane_origin_x = 1920 - t.lanes_width - t.lanes_width2 - 132
 
             // Display the simple-play-simple code block with calculated values
             document.getElementById("simplePlaySimpleCode").textContent = 
-                `t.lane.lane.w = {{ ${laneWidths.join(", ")} }}\n` +
-                `t.lane.notes.w = {{ ${noteWidths.join(", ")} }}\n` +
-                `t.lane.line.px = ${linePx}\n\n` + 
+                `t.lane.lane.w = {{ ${laneWidths.join(", ")} }},\n` +
+                `t.lane.notes.w = {{ ${noteWidths.join(", ")} }},\n` +
+                `t.lane.line.px = ${linePx},\n\n` + 
                 `-- DP line 59\n\n` +
-                `local x = ${Math.round(spacePx / 2)}`;
+                `local x = ${Math.round(spacePx / 2)},`;
 
             // Display the simple-play-old code block with calculated values
             document.getElementById("simplePlayOldCode").textContent =
                 `-- SP\n\n` +
-                `t.lane_width = { ${laneWidths.join(", ")} }\n` +
-                `t.note_width = { ${noteWidths.join(", ")} }\n` +
-                `t.lane_line_px = ${linePx}\n\n-- Also required for DP\n\n` + 
-                `t.lane_width2 = { ${laneWidths.join(", ")} }\n` +
-                `t.note_width2 = { ${noteWidths.join(", ")} }\n` +
-                `t.lane_origin_x = 1920 - t.lanes_width - t.lanes_width2 - ${spacePx}`;
+                `t.lane_width = { ${laneWidths.join(", ")} },\n` +
+                `t.note_width = { ${noteWidths.join(", ")} },\n` +
+                `t.lane_line_px = ${linePx},\n\n-- Also required for DP\n\n` + 
+                `t.lane_width2 = { ${laneWidths.join(", ")} },\n` +
+                `t.note_width2 = { ${noteWidths.join(", ")} },\n` +
+                `t.lane_origin_x = 1920 - t.lanes_width - t.lanes_width2 - ${spacePx},`;
                         // Constants for closest value calculation
 
         // Spice closest value calculation
