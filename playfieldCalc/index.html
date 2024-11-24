@@ -10,15 +10,18 @@
     <style>
         /* Set the body to fill the entire viewport */
         body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column; /* Ensure the layout is vertical */
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
+    min-height: 100%; /* Ensures the body is at least the height of the viewport */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+body {
+    overflow-y: auto; /* Enables vertical scrolling if needed */
+}
 
         /* Container to center content and only wrap around actual contents */
         .container {
