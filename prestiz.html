@@ -204,7 +204,7 @@
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
-    min-width: 760px;
+    table-layout: fixed;
   }
 
   thead th {
@@ -221,7 +221,9 @@
     border-bottom: 1px solid var(--line-strong);
     cursor: pointer;
     user-select: none;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    overflow: hidden;
   }
   thead th:hover { color: var(--ink); }
   thead th:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
@@ -232,6 +234,7 @@
   thead th[aria-sort="ascending"] .arrow { transform: rotate(180deg); }
   thead th[aria-sort] { color: var(--ink); }
   th.num, td.num { text-align: right; }
+  .th-short { display: none; }
 
   tbody tr { border-bottom: 1px solid var(--line); }
   tbody tr:last-child { border-bottom: none; }
@@ -384,10 +387,16 @@
   @media (max-width: 640px) {
     .page { padding: 1.75rem 1rem 3rem; gap: 1.25rem; }
     h1 { font-size: 1.375rem; }
-    td.game, td.holder { max-width: 40vw; }
     .toolbar { flex-direction: column; align-items: stretch; }
     .toolbar-left { flex-direction: column; align-items: stretch; }
     .search { max-width: none; }
+    .th-full { display: none; }
+    .th-short { display: inline; }
+    table { font-size: 0.8125rem; }
+    thead th { padding: 0.55rem 0.4rem; font-size: 0.6875rem; }
+    tbody td { padding: 0.5rem 0.45rem; }
+    td.num { font-size: 0.75rem; white-space: normal; }
+    .tie-badge { margin-left: 0.25rem; padding: 0.05rem 0.3rem; }
   }
 </style>
 
@@ -428,6 +437,14 @@
     <div class="table-shell">
       <div class="table-scroll">
         <table>
+          <colgroup>
+            <col style="width:22%">
+            <col style="width:26%">
+            <col style="width:14%">
+            <col style="width:13%">
+            <col style="width:12%">
+            <col style="width:13%">
+          </colgroup>
           <thead>
             <tr>
               <th data-key="g" data-type="str" tabindex="0" aria-sort="none">
@@ -437,16 +454,16 @@
                 <span class="th-inner">Category<svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </th>
               <th data-key="h" data-type="str" tabindex="0" aria-sort="none">
-                <span class="th-inner">WR holder<svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="th-inner"><span class="th-full">WR holder</span><span class="th-short">Holder</span><svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </th>
               <th class="num" data-key="t" data-type="num" tabindex="0" aria-sort="none">
-                <span class="th-inner">Total runners<svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="th-inner"><span class="th-full">Total runners</span><span class="th-short">Runners</span><svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </th>
               <th class="num" data-key="tc" data-type="num" tabindex="0" aria-sort="none">
                 <span class="th-inner">Tied<svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </th>
               <th class="num" data-key="w" data-type="num" tabindex="0" aria-sort="descending">
-                <span class="th-inner">Weighted score<svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="th-inner"><span class="th-full">Weighted score</span><span class="th-short">Score</span><svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </th>
             </tr>
           </thead>
@@ -477,6 +494,11 @@
     <div class="table-shell">
       <div class="table-scroll">
         <table>
+          <colgroup>
+            <col style="width:55%">
+            <col style="width:20%">
+            <col style="width:25%">
+          </colgroup>
           <thead>
             <tr>
               <th data-pkey="h" data-type="str" tabindex="0" aria-sort="none">
@@ -486,7 +508,7 @@
                 <span class="th-inner">WRs held<svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </th>
               <th class="num" data-pkey="w" data-type="num" tabindex="0" aria-sort="descending">
-                <span class="th-inner">Total weighted score<svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="th-inner"><span class="th-full">Total weighted score</span><span class="th-short">Score</span><svg class="arrow" viewBox="0 0 10 10"><path d="M1 3.5L5 8l4-4.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </th>
             </tr>
           </thead>
@@ -522,13 +544,20 @@
     <div class="modal-body">
       <div class="table-scroll">
         <table>
+          <colgroup>
+            <col style="width:24%">
+            <col style="width:30%">
+            <col style="width:16%">
+            <col style="width:14%">
+            <col style="width:16%">
+          </colgroup>
           <thead>
             <tr>
               <th>Game</th>
               <th>Category</th>
-              <th class="num">Total runners</th>
+              <th class="num"><span class="th-full">Total runners</span><span class="th-short">Runners</span></th>
               <th class="num">Tied</th>
-              <th class="num">Weighted score</th>
+              <th class="num"><span class="th-full">Weighted score</span><span class="th-short">Score</span></th>
             </tr>
           </thead>
           <tbody id="modal-tbody"></tbody>
@@ -801,13 +830,12 @@
     var gameCell = row.gu
       ? '<a href="https://www.speedrun.com/' + encodeURIComponent(row.gu) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(row.g) + '</a>'
       : escapeHtml(row.g);
-    var tieBadge = row.tc > 1 ? '<span class="tie-badge">tied ×' + row.tc + '</span>' : '';
     return (
       '<tr>' +
       '<td class="game" title="' + escapeHtml(row.g) + '">' + gameCell + '</td>' +
       '<td class="category" title="' + escapeHtml(row.c) + '">' + escapeHtml(row.c) + '</td>' +
       '<td class="num">' + fmtInt(row.t) + '</td>' +
-      '<td class="num">' + fmtInt(row.tc) + tieBadge + '</td>' +
+      '<td class="num">' + fmtInt(row.tc) + '</td>' +
       '<td class="num weighted">' + fmtScore(row.w) + '</td>' +
       '</tr>'
     );
